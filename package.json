@@ -1,0 +1,22 @@
+{
+  "name": "KMA-CPA",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run hugo & npm run css",
+    "hugo": "npm run dev-hugo",
+    "css": "npm run watch-css",
+    "dev-hugo": "hugo serve --destination ../output/ --source ./src/ --watch",
+    "build-css": "./node_modules/.bin/node-sass src/assets/scss/ -o tmp/css/ && ./node_modules/.bin/postcss --use autoprefixer -d output/css/ tmp/css/",
+    "watch-css": "nodemon -e scss -x 'npm run build-css'"
+  },
+  "author": "Canary Print + Design <info@canaryprint.ca>",
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.1",
+    "postcss-cli": "^5.0.0"
+  }
+}
