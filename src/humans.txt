@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+Adam Piechnik - -
+
+Kirsten Dodd - Designer / Developer
+
+Bryony Anderson - Designer
+
+Jessica Bruce - Content Creator
+
+Gregory Daynes - Developer
+
+# SITE
+
+Version: .Site.Version
+Last update: .Hugo.BuildDate
