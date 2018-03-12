@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  hugo:
+    build: .
+    command: npm start
+    restart: always
+    volumes:
+      - ./src:/opt/src
+      - ./output:/opt/output
