@@ -25,7 +25,6 @@
     "livereload": "^0.7.0",
     "postcss-cli": "^5.0.0",
     "postcss-easy-import": "^3.0.0",
-    "postcss-import": "^11.1.0",
     "postcss-node-sass": "^2.1.4",
     "postcss-scss": "^1.0.4"
   }
