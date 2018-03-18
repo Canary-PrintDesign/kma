@@ -1,0 +1,32 @@
+/*
+
+  Core
+  ---
+  Setup important variables, creating the foundation of the framework
+
+*/
+
+// All spacing metrics based on this.
+$global-baseline: 8px !default;
+
+// Multiplication factor for spacing units
+$global-spacing-factor-tiny:   1 !default; // 8px
+$global-spacing-factor-small:  2 !default; // 16px
+$global-spacing-factor:        4 !default; // 32px
+$global-spacing-factor-large:  8 !default; // 64px
+$global-spacing-factor-huge:  16 !default; // 128px
+
+// Spacing values - created from the baseline * factor.
+// Not recommended to alter these. Use the parameters above.
+$global-spacing-unit:       $global-baseline * $global-spacing-factor !default;
+$global-spacing-unit-tiny:  $global-baseline * $global-spacing-factor-tiny !default;
+$global-spacing-unit-small: $global-baseline * $global-spacing-factor-small !default;
+$global-spacing-unit-large: $global-baseline * $global-spacing-factor-large !default;
+$global-spacing-unit-huge:  $global-baseline * $global-spacing-factor-huge !default;
+
+// Base typographical styles.
+$global-font-size: 16px !default;
+$global-font-smoothing: false !default;
+$global-line-height: $global-spacing-unit !default;
+
+

@@ -1,0 +1,13 @@
+/*
+
+  Paragraph
+
+*/
+
+$paragraph-sibling-margin: true;
+
+@if $paragraph-sibling-margin {
+  p + p {
+    margin-top: $global-spacing-unit;
+  }
+}
