@@ -3,20 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npm run dev:hugo & npm run dev:css",
-
     "dev:hugo": "hugo serve --destination ../output/ --source ./src/ --watch",
     "dev:css": "npm run dev:post-css:watch & npm run dev:livereload",
     "dev:js": "echo 'dev:js not implemented'",
-
-    "dev:post-css": "./node_modules/.bin/postcss --map --ext 'css' -d output/assets/css/ ./src/assets/scss/",
-    "dev:post-css:watch": "./node_modules/.bin/postcss --watch --map --ext 'css' -d output/assets/css/ ./src/assets/scss/",
-    "dev:livereload": "./node_modules/.bin/livereload ./output/assets/css",
-
+    "dev:post-css": "./node_modules/.bin/postcss --config 'postcss.config.js'  --map --ext 'css' -d output/assets/css/ ./src/assets/scss/site.scss",
+    "dev:post-css:watch": "./node_modules/.bin/postcss --config 'postcss.config.js' --watch --map --ext 'css' -d output/assets/css/ ./src/assets/scss/site.scss",
+    "dev:livereload": "./node_modules/.bin/livereload ./output/assets/css/",
     "build": "npm run build:hugo & npm run build:css & npm run build:js",
     "build:hugo": "echo 'build:hugo not implemented'",
     "build:css": "echo 'build:css not implemented'",
     "build:js": "echo 'build:js not implemented'",
-
     "deploy": "echo 'build:deploy not implemented'"
   },
   "author": "Canary Print + Design <info@canaryprint.ca>",
@@ -28,6 +24,8 @@
     "cssnano": "^3.10.0",
     "livereload": "^0.7.0",
     "postcss-cli": "^5.0.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^11.1.0",
     "postcss-node-sass": "^2.1.4",
     "postcss-scss": "^1.0.4"
   }
