@@ -1,0 +1,82 @@
+# !Build Stuff
+markdown:    kramdown
+exclude:     []    # Files and folders to skip when building
+destination: "../output" # Where jekyll will build the site to
+permalink:   /:categories/:title # how urls will be created. eg: "website.com/category/title"
+charset:     utf-8 # Website character set
+baseurl:     /     # root
+url:         ""    # primary url the website will reside at
+
+# !- Content Details
+contact:
+  tel: '250.390.4131'
+  email: 'info@kmacpa.ca'
+
+collections:
+- features
+- advice_centre
+
+sass:
+  sass_dir: _sass
+
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-pug
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# !- Site Configuration
+name:      "KMA Chartered Professional Accountants LTD." # Site title
+name-safe: "kma-cpa" # Url safe version of site title. eg: "lowercase-dash-separated-text"
+tagline:   "Trusted Accounting Services" # Website tagline
+license:   "GNU GPL v3 http://www.gnu.org/licenses/gpl-3.0.en.html"
+copyright: "©2018 KMA Chartered Professional Accountants LTD." # Will format out to "©2013 Company Name Inc. All rights reserved."
+webmaster: "kma@canaryprint.ca" # email address for master of website
+title-delimiter: " • " # Symbol to separate page title and site title. Include spaces. eg: "Home • Site Title"
+language:  "en-US" # base language for website
+
+# !- Publishing Information
+creator:     "Canary Print" # Name or twitter handle of the website creator
+email:       "info@canaryprint.ca" # email address of website creator
+publisher:   "https://www.canaryprint.ca/" # name or twitter handle of publisher of website
+keywords:    "" # Keywords to describe website
+description: "" # Written description of website. Keep under 250 words if possible
+
+# !- Social
+twitter:      "KMACPACA" # Twitter handle for website
+twitter-card: "summary" # style of twitter cards. eg: "summary"
+
+# !- analytics
+analytics:           false # enable analytics. boolean
+analytics-id:        "" # Google analytics tracking number. eg "UA-XXXXXX-XX"
+analytics-optimized: false # Google analytics version to use. true | false
+
+# !- RSS
+rss-enabled:    false # enable rss. true | false
+rss-feed:       "" # location of feed. eg: "/feed.rss"
+
+# !- Mobile
+mobile-optimized: ture # is the website mobile optimized. true | false
+
+# !- Web App Options
+web-app-enabled: false # options: true | false
+web-app-capable: "" # yes | no
+web-app-title:   "" # tip: keep it short
+web-app-style:   "" # options: default, black, black-translucent
+web-app-color:   "" # used for Windows 8 / RT
+
+# !- dns-prefetch
+# Identifies a DNS query to resolve the background, so that requests can occur more quickly.
+#dns-prefetch:
+#  - twitter.com
+#  - facebook.com
+#  - mailchimp.com
+
+# !- resource-prefetch:
+# Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
+#prefetch:
+#  - "http://example.com/css/style.css"
