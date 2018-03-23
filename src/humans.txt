@@ -1,3 +1,5 @@
+---
+---
 # humanstxt.org/
 # The humans responsible & technology colophon
 
@@ -15,5 +17,4 @@ Gregory Daynes - Developer
 
 # SITE
 
-Version: .Site.Version
-Last update: .Hugo.BuildDate
+Last update: {{ site.time }}

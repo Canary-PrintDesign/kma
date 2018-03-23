@@ -1,0 +1,15 @@
+{% include html/doctype.html %}
+{% include html/license.html %}
+<html class="no-js" lang="{{site.language}}">
+{% include html/head.html %}
+
+<body{% if page.body-class != null %}class="{{page.body-class}}"{% endif %}>
+    {% include elements/header.html %}
+    {% include elements/nav.html %}
+
+    {{content}}
+
+    {% include elements/footer.html %}
+
+    {% include scripts.html %}
+    {% include html/analytics.html %}
