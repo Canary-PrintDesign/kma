@@ -1,9 +1,12 @@
 version: '3'
 
 services:
-  hugo:
+  jekyll:
     build: .
-    command: npm start
+    command: npm run dev:jekyll
+    ports:
+      - "4000:4000"
+      - "35729:35729"
     restart: always
     volumes:
       - ./src:/opt/src

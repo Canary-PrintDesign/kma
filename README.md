@@ -32,7 +32,9 @@ You will need the following to work on the project.
 
 [NPMJS](https://npmjs.org)
 
-[Hugo](https://gohugo.io)
+[Jekyll](https://jekyllrb.com)
+
+[Ruby](https://ruby-lang.org)
 
 ## Installing/Running Development
 
@@ -76,19 +78,31 @@ cd kma
 npm install
 ```
 
-4. Run local development servers
+4. Install Ruby Gems through Bundler
+
+```sh
+gem install bundler
+```
+
+```sh
+bundle install
+```
+
+5. Run local development servers
 
 ```sh
 npm start
 ```
 
-note this will run `Hugo Server` and the `Sass/CSS Pipeline` side-by-side.
+note this will run `Jekyll Server` with `watch` and `livereload`
 
 ## Build Pipeline
 
-The pipeline for working with KMA are done through NPM scripts, which are more easily composed and customized than common build tools like Webpack, Gulp, Grunt, Broccoli, etc.
+The pipeline for working with KMA is done through NPM scripts, which are more easily composed and customized than common build tools like Webpack, Gulp, Grunt, Broccoli, etc.
 
 They can be found reading through the [package.json](package.json) file in the scripts section.
+
+Sass/SCSS is built through Jekyll during development and production
 
 ### Development
 
@@ -104,43 +118,19 @@ Alternative to `npm start` you can run each script independently using `npm run`
 
 ```sh
 eg:
-npm run dev:hugo
+npm run dev:jekyll
 ```
 
 ### Piplines
 
-#### dev:hugo
+#### dev:jekyll
 
-`npm run dev:hugo` will start up a simple Hugo server instance outputting the build to the `/output` directory, while also continuing to watch for changes in the `/src` directory
+`npm run dev:jekyll` will start up the full Jekyll Server outputting the build to the `/output` directory, while also continuing to watch for changes in the `/src` directory
 
-#### dev:css
-
-`npm run dev:css` will run both `dev:post-css:watch` and `dev:livereload`
-
-#### dev:post-css & dev:post-css:watch
-
-`npm run dev:post-css` & `npm run dev:post-css:watch` are responsible for:
-
-1. Transpiling `.scss` files from `/src/assets/scss/` via `Node-Sass & LibSass`
+1. Transpiling `.scss` files from `/src/assets/scss/`
 2. Using `autoprefixer` to create any vendor-preixed CSS properties in the declarations that do not yet have public release
-3. Minification using `cssnano`
-4. SourceMaps
-5. Source file change detection (only for `dev:post-css:watch`)
-
-#### dev:livereload
-
-`npm run dev:livereload` runs a small asset server for the `css` files, that allow the browser to automatically refresh on change to the ouput css from the css piplines.
-
-The Chrome [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) extension is recommended for this pipeline because it does not modify the document.
-
-Alternatively the following script tag can be added to any page you want to use LiveReload on.
-
-```html
-<script>
-  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-  ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
-```
+3. SourceMaps
+4. Live page reloads through `livereload` provided by Jekyll
 
 #### dev:js
 
@@ -154,7 +144,7 @@ Alternatively the following script tag can be added to any page you want to use 
 
 #### build:hugo
 
-`npm run build:hugo` not implemented
+`npm run build:jekyll` not implemented
 
 #### build:css
 
@@ -173,10 +163,9 @@ TBD - Nothing to deploy yet
 ## Built With
 
 [Docker](https://docker.com)
-[Hugo](https://gohugo.io)
+[Jekyll](https://jekyllrb.com)
 [SASS](https://sass-lang.com)
 [NPMJS](https://npmjs.com)
-[PostCSS](https://github.com/postcss/postcss)
 
 ## Authors
 
@@ -199,3 +188,15 @@ This project is licensed under the GNU GPL V3 - see the [LICENSE](LICENSE) file 
 - [ ] - - Optimization [imagemin](https://github.com/imagemin/imagemin-cli)
 - [ ] - - SVG [svgo](https://www.npmjs.com/package/svgo)
 - Deploy Script
+    
+
+
+
+
+
+https://jekyll-pug.dougie.io/docs#configuration
+https://github.com/wildlyinaccurate/jekyll-responsive-image
+https://github.com/KrzysiekJ/jekyll-i18n_tags
+https://github.com/matthodan/jekyll-asset-pipeline
+https://github.com/tkareine/jekyll-minibundle
+https://github.com/jekyll/jekyll-feed
