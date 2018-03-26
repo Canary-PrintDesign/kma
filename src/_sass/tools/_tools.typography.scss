@@ -13,11 +13,19 @@
 }
 
 .columns--two {
-  @include columns(2);
+  @include columns(2, $gutter--large);
+
+  @media screen and (min-width: $bp-desktop) {
+    @include columns(2);
+  }
 }
 
 .columns--three {
-  @include columns(3);
+  @include columns(3, $gutter--large);
+
+  @media screen and (min-width: $bp-desktop) {
+    @include columns(3);
+  }
 }
 
 .breakable {
