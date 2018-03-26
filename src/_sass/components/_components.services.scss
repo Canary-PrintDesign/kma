@@ -16,6 +16,7 @@
   padding-bottom: 60px; // button offset
   border-radius: 5px;
   overflow: hidden;
+  flex-basis: 100%;
 
   @include box-shadow;
 
