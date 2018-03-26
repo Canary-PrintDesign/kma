@@ -14,12 +14,16 @@ section {
   > h1,
   > .wrapper > h1,
   &.contact > .wrapper > .content > h1 {
-    margin-bottom: $gutter--large;
+    margin-bottom: $gutter--ns;
     text-transform: uppercase;
     font-weight: 900;
 
     @include display;
     @include h2;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: $gutter--large;
+    }
 
     @media screen and (min-width: $bp-large) {
       margin-bottom: 60px;
