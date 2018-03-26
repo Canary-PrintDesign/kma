@@ -1,0 +1,95 @@
+[class^="feature"] {
+  .wrapper {
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    > * {
+      flex-basis: 50%;
+    }
+  }
+
+  h1 {
+    margin-top: $gutter--large;
+    order: 2;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      flex-shrink: 0;
+      margin-right: 50%;
+    }
+  }
+
+  .image {
+    order: 1;
+  }
+
+  .content {
+    order: 3;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: calc(50% - 70px);
+      margin-right: 70px;
+
+      @include accent;
+      @include h5;
+    }
+  }
+
+  a {
+    @extend .button;
+    @extend .button--accent;
+  }
+}
+
+.feature--even {
+  h1 {
+    order: 2;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: calc(50%);
+      padding-left: 70px;
+      margin-right: 0;
+    }
+  }
+
+  .image {
+    order: 1;
+  }
+
+  .content {
+    order: 3;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 70px;
+      margin-right: 0;
+    }
+  }
+}
+
+// Responsive Ordering
+@media screen and (min-width: $bp-desktop) {
+  .feature {
+    .image {
+      order: 3;
+    }
+
+    .content {
+      order: 2;
+    }
+  }
+
+  .feature--even {
+    .image {
+      order: 2;
+    }
+
+    .content {
+      order: 3;
+    }
+  }
+}
+
