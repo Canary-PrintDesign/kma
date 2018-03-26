@@ -21,10 +21,6 @@
   @include font(body);
 }
 
-@mixin accent {
-  @include font(accent);
-}
-
 @mixin legible() {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;

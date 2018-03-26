@@ -46,7 +46,6 @@
       text-transform: uppercase;
       padding: 20px;
 
-      @include accent;
       @include h5;
     }
   }
@@ -63,8 +62,6 @@
     color: $color-text-body;
     font-weight: bold;
     font-style: italic;
-
-    @include accent;
   }
 }
 

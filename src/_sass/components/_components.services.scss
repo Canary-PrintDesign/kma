@@ -52,7 +52,6 @@
   p {
     margin: $gutter--medium;
 
-    @include accent;
     @include body-large;
 
     @media screen and (min-width: $bp-desktop) {

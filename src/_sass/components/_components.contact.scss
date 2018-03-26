@@ -20,7 +20,6 @@
   }
 
   dl {
-    @include accent;
     @include h5;
   }
 
@@ -62,7 +61,6 @@
   }
 
   p {
-    @include accent;
     @include body-large;
   }
 }

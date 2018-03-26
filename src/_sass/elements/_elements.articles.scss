@@ -13,7 +13,6 @@ article {
 
   p {
     margin-bottom: $gutter;
-    @include accent;
   }
 
   section {
@@ -60,8 +59,6 @@ article {
 
       .details {
         flex-basis: 75%;
-
-        @include accent;
       }
     }
   }

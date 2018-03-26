@@ -63,14 +63,9 @@
     @include h3;
   }
 
-  small {
-    @include accent;
-  }
-
   label {
     font-weight: 700;
 
-    @include accent;
     @include body-large;
   }
 

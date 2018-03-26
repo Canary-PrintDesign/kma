@@ -28,7 +28,6 @@
       text-decoration: none;
       color: $color-text--light;
 
-      @include accent;
       @include body-large;
     }
   }
@@ -38,7 +37,6 @@
   margin-top: 60px;
 
   @include small;
-  @include accent;
 
   a {
     color: $color-text--light;
