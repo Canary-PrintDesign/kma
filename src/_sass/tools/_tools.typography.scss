@@ -13,11 +13,23 @@
 }
 
 .columns--two {
-  @include columns(2);
+  @media screen and (min-width: $bp-tablet) {
+    @include columns(2, $gutter--large);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    @include columns(2);
+  }
 }
 
 .columns--three {
-  @include columns(3);
+  @media screen and (min-width: $bp-tablet) {
+    @include columns(3, $gutter--large);
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    @include columns(3);
+  }
 }
 
 .breakable {

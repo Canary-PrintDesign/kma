@@ -1,18 +1,37 @@
 .contact {
   background-color: $color-grey--light;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  margin-top: -60px;
+  padding-top: $gutter--large;
+  padding-bottom: $gutter--large;
   margin-bottom: 0;
 
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .wrapper {
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+
     > * {
-      flex: 1 1 50%;
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-basis: 50%;
+      }
     }
   }
 
   .content {
-    padding-right: 80px;
+    margin-bottom: $gutter--large;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-right: $gutter--large;
+    }
   }
 
   h1 {
@@ -20,7 +39,6 @@
   }
 
   dl {
-    @include accent;
     @include h5;
   }
 
@@ -62,7 +80,6 @@
   }
 
   p {
-    @include accent;
     @include body-large;
   }
 }

@@ -26,7 +26,11 @@
 */
 
 @mixin h1 {
-  @include font-size(48px);
+  @include font-size(36px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(48px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(64px);
@@ -34,7 +38,11 @@
 }
 
 @mixin h2 {
-  @include font-size(36px);
+  @include font-size(30px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(36px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(48px);
@@ -42,7 +50,11 @@
 }
 
 @mixin h3 {
-  @include font-size(30px);
+  @include font-size(24px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(30px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(36px);
@@ -50,7 +62,11 @@
 }
 
 @mixin h4 {
-  @include font-size(24px);
+  @include font-size(20px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(24px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(30px);
@@ -58,7 +74,11 @@
 }
 
 @mixin h5 {
-  @include font-size(20px);
+  @include font-size(18px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(20px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(24px);
@@ -66,7 +86,11 @@
 }
 
 @mixin body-large {
-  @include font-size(18px);
+  @include font-size(16px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(18px);
+  }
 
   @media screen and (min-width: $bp-large) {
     @include font-size(20px);
@@ -82,8 +106,12 @@
 }
 
 @mixin small {
-  @include font-size(12px);
-  
+  @include font-size(10px);
+
+  @media screen and (min-width: $bp-tablet) {
+    @include font-size(12px);
+  }
+
   @media screen and (min-width: $bp-large) {
     @include font-size(14px);
   }

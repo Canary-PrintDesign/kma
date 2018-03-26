@@ -49,9 +49,8 @@ $global-font-smoothing: false !default;
 $global-line-height: $global-spacing-unit !default;
 
 $fonts: (
-  body: 'SourceSans',
+  body: 'ClearSans',
   display: 'Aileron',
-  accent: 'ClearSans'
 );
 
 // Colors
@@ -91,5 +90,6 @@ $color-brand-three--light: $botticelli;
 $color-text-body: $color-grey--dark;
 $color-text--light: $color-grey--lightest;
 $color-background--dark: $color-grey--dark;
+$color-background--light: $color-grey--lightest;
 
 $color-shadow: rgba(0, 0, 0, 0.5);
