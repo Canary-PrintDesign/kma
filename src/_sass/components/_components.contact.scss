@@ -1,9 +1,13 @@
 .contact {
   background-color: $color-grey--light;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  margin-top: -60px;
+  padding-top: $gutter--large;
+  padding-bottom: $gutter--large;
   margin-bottom: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
   .wrapper {
     > * {
