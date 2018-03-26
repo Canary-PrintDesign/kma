@@ -1,4 +1,8 @@
 .floating-buttons {
+  @media screen and (max-width: $bp-desktop - 0.1) {
+    display: none;
+  }
+
   position: absolute;
   right: 0;
 
