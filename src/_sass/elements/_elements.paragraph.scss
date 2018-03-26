@@ -8,7 +8,19 @@ $paragraph-sibling-margin: true;
 
 @if $paragraph-sibling-margin {
   p + p {
-    margin-top: $global-spacing-unit;
+    margin-top: $gutter--medium;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: $gutter--large;
+    }
+  }
+}
+
+p {
+  margin-bottom: $gutter--medium;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: $gutter--large;
   }
 }
 
