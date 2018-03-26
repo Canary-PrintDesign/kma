@@ -1,11 +1,15 @@
 .floating-buttons {
+  display: none;
   position: fixed;
   right: 0;
   top: 33%;
   transform-origin: bottom right;
   transform: rotate(-90deg);
-  display: flex;
   z-index: 1;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+  }
 
   a {
     margin-right: $gutter--medium;
