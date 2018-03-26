@@ -1,0 +1,93 @@
+.advice-centre {
+  h1 {
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.advice-card {
+  flex: 1 1 fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  overflow: hidden;
+  margin-right: $gutter--medium;
+  justify-content: space-between;
+
+  @media screen and (min-width: $bp-large) {
+    flex-direction: row;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    @media screen and (min-width: $bp-large) {
+      flex-shrink: 0;
+      width: 50%;
+    }
+
+    h1 {
+      text-align: left;
+      color: $color-text--light;
+      margin-bottom: 0;
+      align-self: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px;
+
+      @include accent;
+      @include h5;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: $color-text-body;
+    font-weight: bold;
+    font-style: italic;
+
+    @include accent;
+  }
+}
+
+.advice-card:nth-of-type(1) {
+  background-color: $color-brand-one;
+
+  .content {
+    background-color: $color-brand-one--light;
+  }
+}
+
+.advice-card:nth-of-type(2) {
+  background-color: $color-brand-two;
+
+  .content {
+    background-color: $color-brand-two--light;
+  }
+}
+
+.advice-card:nth-of-type(3) {
+  background-color: $color-brand-three;
+
+  .content {
+    background-color: $color-brand-three--light;
+  }
+}
