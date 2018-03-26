@@ -10,13 +10,28 @@
   }
 
   .wrapper {
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+
     > * {
-      flex: 1 1 50%;
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-basis: 50%;
+      }
     }
   }
 
   .content {
-    padding-right: 80px;
+    margin-bottom: $gutter--large;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-right: $gutter--large;
+    }
   }
 
   h1 {
