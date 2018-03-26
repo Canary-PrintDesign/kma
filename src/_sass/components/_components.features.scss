@@ -13,8 +13,12 @@
   }
 
   h1 {
-    margin-top: $gutter--large;
+    margin-top: $gutter--medium;
     order: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-top: $gutter--large;
+    }
 
     @media screen and (min-width: $bp-desktop) {
       text-align: left;
@@ -25,6 +29,13 @@
 
   .image {
     order: 1;
+    margin-left: -$gutter--medium;
+    margin-right: -$gutter--medium;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
   .content {
