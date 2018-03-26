@@ -1,4 +1,10 @@
 article {
+  margin-top: $gutter--medium;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-top: $gutter--large * 2;
+  }
+
   > h1 {
     text-align: center;
 
@@ -30,9 +36,15 @@ article {
 
     h2 {
       font-weight: 600;
+      margin-top: $gutter--large;
+      margin-bottom: $gutter--medium;
 
       @include h4;
       @include display;
+
+      @media screen and (min-width: $bp-desktop) {
+        margin-bottom: $gutter--large;
+      }
     }
 
     ul {
@@ -41,13 +53,20 @@ article {
   }
 
   [class^=columns] {
-    margin-bottom: $gutter--large;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: $gutter--large;
+    }
   }
 
   aside {
     .definition {
       display: flex;
+      flex-direction: column;
       margin-bottom: $gutter--large;
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+      }
 
       h1 {
         flex-basis: 25%;
