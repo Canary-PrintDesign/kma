@@ -4,8 +4,8 @@
 {% include html/head.html %}
 
 <body{% if page.body-class != null %}class="{{page.body-class}}"{% endif %}>
-    {% include elements/header.html %}
     {% include elements/nav.html %}
+  {% include components/header.pug %}
 
     {{content}}
 

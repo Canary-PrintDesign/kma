@@ -1,0 +1,15 @@
+.site-header {
+  padding: 14px 0;
+
+  @media screen and (max-width: $bp-tablet - 0.1) {
+    display: none;
+  }
+
+  .wrapper {
+    justify-content: space-between;
+  }
+
+  .site-logo {
+    height: 52px;
+  }
+}
