@@ -51,6 +51,7 @@ article {
 
       h1 {
         flex-basis: 25%;
+        margin-right: $gutter--medium;
         font-weight: 700;
 
         @include display;
