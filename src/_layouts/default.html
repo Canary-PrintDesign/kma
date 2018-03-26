@@ -4,12 +4,13 @@
 {% include html/head.html %}
 
 <body{% if page.body-class != null %}class="{{page.body-class}}"{% endif %}>
-    {% include elements/header.html %}
-    {% include elements/nav.html %}
+  {% include components/header.pug %}
+  {% include components/site-nav.pug %}
 
-    {{content}}
+  {{content}}
 
-    {% include elements/footer.html %}
+  {% include components/contact.pug %}
+  {% include components/footer.pug %}
 
-    {% include scripts.html %}
-    {% include html/analytics.html %}
+  {% include scripts.html %}
+  {% include html/analytics.html %}

@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "npm run dev:jekyll",
-
     "dev:jekyll": "jekyll serve -H 0.0.0.0 --livereload --source ./src --destination ./output",
     "dev:js": "echo 'dev:js not implemented'",
-
     "build": "npm run build:jekyll & npm run build:css & npm run build:js",
     "build:jekyll": "echo 'build:jekyll not implemented'",
     "build:css": "echo 'build:css not implemented'",
@@ -16,5 +14,9 @@
   "author": "Canary Print + Design <info@canaryprint.ca>",
   "dependencies": {
     "npm": "^5.7.1"
+  },
+  "dev-dependencies": {},
+  "devDependencies": {
+    "pug": "^2.0.3"
   }
 }

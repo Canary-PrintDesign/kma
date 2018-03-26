@@ -1,0 +1,47 @@
+nav.site-nav
+  .wrapper
+    a(class="{% if page.class contains 'home' %}is-active{% endif %}", href="/")
+      span Home
+
+    a(class="{% if page.class contains 'services' %}is-active{% endif %}", href="#")
+      span Services
+
+    a(class="{% if page.class contains 'about' %}is-active{% endif %}", href="/about")
+      span About
+
+    a(class="{% if page.class contains 'contact' %}is-active{% endif %}", href="#contact")
+      span Contact
+
+nav.mega-nav
+  .wrapper
+    .column
+      a.main(href="/services/personal-taxes") Personal Taxes
+      a(href="/services/personal-taxes#canadian-personal-trust-tax-returns") Canadian Personal & Trust Tax Returns
+      a(href="/services/personal-taxes#final-estate-returns") Final & Estate Returns
+      a(href="/services/personal-taxes#foreign-reporting") Foreign Reporting
+      a(href="/services/personal-taxes#canadian-tax-filling-non-residents") Canadian Tax Filling For Non-Residents
+      a(href="/services/personal-taxes#estate-planning") Estate Planning
+      a(href="/services/personal-taxes#business-valuations") Business Valuations
+      a.main(href="/services/tax-forms") Tax Forms
+
+    .column
+      a.main(href="/services/us-taxes") U.S. Taxes
+      a(href="/services/us-taxes#personal-returns") U.S. Personal Federal & State Returns
+      a(href="/services/us-taxes#obtain-tax-number") Obtaining a U.S. Tax number (ITIN)
+      a(href="/services/us-taxes#renew-tax-number") Renewing Your U.S. Tax Number (ITIN)
+      a(href="/services/us-taxes#corporate-returns") U.S. Corporate Federal & State Returns
+      a(href="/services/us-taxes#foreign-bank-report") Foreign Bank Account Report (FBAR) - FINCEN 114 - Reporting Your Non-US Bank & Investments
+      a(href="/services/us-taxes#reporting-requirements") Additional U.S. Reporting Requirements
+      a(href="/services/us-taxes#canadian-us-income") Canadians With U.S. Income
+
+    .column
+      a.main(href="/services/business") Business Services
+      a(href="/services/business#accounting-audit") Accounting & Audit Services
+      a(href="/services/business#corporate-tax") Corporate Tax Services
+      a(href="/services/business#consulting") Consulting Services
+      a(href="/services/business#succession-planning") Succession Planning
+      a(href="/services/business#bookkeeping") Bookkeeping & Payroll Services
+      a(href="/services/business#corporate-restructuring") Corporate Restructuring
+      a(href="/services/business#starting") Starting A Business
+      a.main(href="/") Secure File Upload
+

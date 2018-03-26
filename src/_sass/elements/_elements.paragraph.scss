@@ -11,3 +11,7 @@ $paragraph-sibling-margin: true;
     margin-top: $global-spacing-unit;
   }
 }
+
+p:last-of-type {
+  margin-bottom: 0;
+}

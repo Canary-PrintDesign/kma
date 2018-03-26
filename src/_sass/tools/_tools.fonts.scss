@@ -1,0 +1,43 @@
+/*
+
+  Fonts
+  ---
+  Finds and inserts the font family based on the type sent, pairs it with 
+  a font weight. Basic usage is simply:
+
+    @include font(body);
+
+  You can specify a specific weight by passing it as the second argument
+
+    @include font(body, 400);
+
+*/
+
+@mixin display {
+  @include font(display);
+}
+
+@mixin body {
+  @include font(body);
+}
+
+@mixin accent {
+  @include font(accent);
+}
+
+@mixin legible() {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+}
+
+@mixin font($type, $weight: '') {
+  @if map-has-key($fonts, $type) {
+    font-family: #{map-get($fonts, $type)};
+  }
+
+  @if $weight != '' {
+    font-weight: $weight;
+  }
+
+  @include legible;
+}

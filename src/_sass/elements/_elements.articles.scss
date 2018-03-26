@@ -1,0 +1,73 @@
+article {
+  > h1 {
+    text-align: center;
+
+    @include margin-center;
+    @include display;
+    @include h1;
+
+    span {
+      border-bottom: 3px solid $color-brand-two;
+    }
+  }
+
+  p {
+    margin-bottom: $gutter;
+    @include accent;
+  }
+
+  section {
+    flex-direction: column;
+
+    @include wrapper;
+
+    h1 {
+      text-align: left;
+      font-weight: normal;
+
+      @include display;
+      @include h2;
+    }
+
+    h2 {
+      font-weight: 600;
+
+      @include h4;
+      @include display;
+    }
+
+    ul {
+      @include avoid-column-break;
+    }
+  }
+
+  [class^=columns] {
+    margin-bottom: $gutter--large;
+  }
+
+  aside {
+    .definition {
+      display: flex;
+      margin-bottom: $gutter--large;
+
+      h1 {
+        flex-basis: 25%;
+        font-weight: 700;
+
+        @include display;
+        @include h5;
+      }
+
+      .details {
+        flex-basis: 75%;
+
+        @include accent;
+      }
+    }
+  }
+
+  .alternate {
+    padding: $gutter;
+    background-color: $color-brand-three--light;
+  }
+}

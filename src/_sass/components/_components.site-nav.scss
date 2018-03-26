@@ -1,0 +1,29 @@
+.site-nav {
+  background-color: $color-background--dark;
+
+  .wrapper {
+    justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: flex-start;
+    }
+  }
+
+  a {
+    color: $color-text--light;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 85px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+
+    @include accent;
+    @include body;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

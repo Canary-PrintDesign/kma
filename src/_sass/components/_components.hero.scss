@@ -1,0 +1,56 @@
+.hero {
+  height: 622px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1920px;
+  @include margin-center;
+
+  .image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('/assets/img/business-3167295_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+
+    &:after {
+      content: '';
+      display: block;
+      background-image: url('/assets/img/bg_overlay.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 622px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+   h1 {
+    color: $color-text--light;
+    text-transform: uppercase;
+    font-weight: 800;
+    white-space: pre-line;
+    margin-bottom: 30px;
+    letter-spacing: 2.4px;
+
+    @include display;
+    @include h1;
+  }
+
+  p {
+    color: $color-text--light;
+    white-space: pre-line;
+    marign-bottom: 30px;
+
+    @include accent;
+    @include font-size(22px, 39px);
+  }
+}

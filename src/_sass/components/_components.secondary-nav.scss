@@ -1,0 +1,37 @@
+.secondary-nav {
+  justify-content: flex-end;
+
+  a {
+    white-space: nowrap;
+    display: flex;
+    margin-left: 15px;
+    color: $color-grey;
+    text-decoration: none;
+
+    @include body;
+    @include display;
+
+    &.nav--upload,
+    &.nav--facebook {
+      margin-left: 30px;
+    }
+
+    &.nav--upload i,
+    &.nav--tel i {
+      margin-right: 10px;
+    }
+
+    i {
+      height: 30px;
+      width: 30px;
+    }
+
+    span {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: inherit;
+      }
+    }
+  }
+}

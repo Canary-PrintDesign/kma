@@ -1,0 +1,33 @@
+.mega-nav {
+  .wrapper {
+    padding-top: $gutter--large;
+    padding-bottom: $gutter--large;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: 370px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  a {
+    color: $color-brand-two;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+
+    @include accent;
+    @include h5;
+  }
+
+  .main {
+    font-weight: 700;
+
+    @include h3;
+    @include display;
+  }
+}

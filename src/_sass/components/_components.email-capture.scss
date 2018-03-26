@@ -1,0 +1,87 @@
+.email-capture {
+  position: relative;
+  color: $color-text--light;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  max-width: 1920px;
+  @include margin-center;
+
+  .image {
+    background-image: url('/assets/img/people-woman-coffee-meeting.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('/assets/img/bg_overlay-solid.svg');
+    }
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+
+  .content {
+    flex: 1 0 50%;
+  }
+
+  form {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 110px;
+  }
+
+  h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+
+    @include h2;
+    @include display;
+  }
+
+  p {
+    font-weight: 200;
+    text-transform: capitalize;
+    white-space: pre-line;
+
+    @include display;
+    @include h3;
+  }
+
+  small {
+    @include accent;
+  }
+
+  label {
+    font-weight: 700;
+
+    @include accent;
+    @include body-large;
+  }
+
+  input {
+    height: 46px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 40px;
+  }
+}
