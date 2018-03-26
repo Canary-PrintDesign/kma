@@ -11,14 +11,18 @@
 
 .service {
   text-align: center;
-  margin-bottom: $gutter--large;
   position: relative;
   padding-bottom: 60px; // button offset
   border-radius: 5px;
   overflow: hidden;
   flex-basis: 100%;
+  margin-bottom: $gutter--medium;
 
   @include box-shadow;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: $gutter--large;
+  }
 
   @media screen and (min-width: $bp-desktop) {
     margin-left: 15px;
