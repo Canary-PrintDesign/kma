@@ -10,7 +10,7 @@
   width: 100%;
   @include margin-center;
 
-  max-width: calc(#{$bp-tablet} - (2 * #{$gutter--medium}));
+  max-width: calc(#{$bp-tablet} - (2 * #{$gutter--large}));
 
   @media screen and (min-width: $bp-desktop) {
     max-width: calc(#{$bp-desktop} - (2 * #{$gutter--large}));
