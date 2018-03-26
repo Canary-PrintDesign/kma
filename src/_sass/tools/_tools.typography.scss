@@ -16,6 +16,10 @@
   @include columns(2);
 }
 
+.columns--three {
+  @include columns(3);
+}
+
 .breakable {
   break-inside: inherit;
 }
