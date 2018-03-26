@@ -1,0 +1,48 @@
+.site-footer {
+  background-color: $color-brand-two;
+  color: $color-text--light;
+  text-align: center;
+
+  .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight:800;
+    max-width: 35ch;
+
+    @include display;
+    @include h5;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+    a {
+      text-decoration: none;
+      color: $color-text--light;
+
+      @include accent;
+      @include body-large;
+    }
+  }
+}
+
+.site-copyright {
+  margin-top: 60px;
+
+  @include small;
+  @include accent;
+
+  a {
+    color: $color-text--light;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+}

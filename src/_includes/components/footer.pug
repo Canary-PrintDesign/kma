@@ -1,0 +1,13 @@
+footer.site-footer
+  .wrapper
+    h1 {{ site.name }}
+
+    nav
+      a(href="/") Home
+      a(href="#") Services
+      a(href="/about") About
+      a(href="#contact") Contact
+
+    .site-copyright
+      | {% include fragment/html-copyright.html %}
+      a(href="/privacy") Privacy Policy
