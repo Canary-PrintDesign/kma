@@ -1,27 +1,16 @@
 .floating-buttons {
-  @media screen and (max-width: $bp-desktop - 0.1) {
-    display: none;
-  }
-
-  position: absolute;
+  position: fixed;
   right: 0;
-
-  .inner {
-    margin-bottom: 20px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
+  top: 33%;
+  transform-origin: bottom right;
+  transform: rotate(-90deg);
+  display: flex;
+  z-index: 1;
 
   a {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    border-bottom-right-radius: 4px;
+    margin-right: $gutter--medium;
     border-top-right-radius: 4px;
-    vertical-align: middle;
-    padding: 30px;
-
+    border-top-left-radius: 4px;
     @include box-shadow;
   }
 }
