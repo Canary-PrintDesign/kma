@@ -3,9 +3,14 @@
     text-align: center;
   }
 
-  .cards {
+  .list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 }
 
