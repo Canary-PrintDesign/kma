@@ -25,6 +25,70 @@
 
 */
 
+@mixin h1 {
+  @include font-size(48px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(64px);
+  }
+}
+
+@mixin h2 {
+  @include font-size(36px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(48px);
+  }
+}
+
+@mixin h3 {
+  @include font-size(30px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(36px);
+  }
+}
+
+@mixin h4 {
+  @include font-size(24px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(30px);
+  }
+}
+
+@mixin h5 {
+  @include font-size(20px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(24px);
+  }
+}
+
+@mixin body-large {
+  @include font-size(18px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(20px);
+  }
+}
+
+@mixin body {
+  @include font-size(16px);
+
+  @media screen and (min-width: $bp-large) {
+    @include font-size(18px);
+  }
+}
+
+@mixin small {
+  @include font-size(12px);
+  
+  @media screen and (min-width: $bp-large) {
+    @include font-size(14px);
+  }
+}
+
 @mixin font-size($font-size, $line-height: auto, $modifier: 0, $important: false) {
   @if (type-of($font-size) == number) {
     @if (unit($font-size) != "px") {

@@ -1,0 +1,34 @@
+[class^=icon] {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+}
+
+.icon {
+  &--tel {
+    background-image: url('/assets/icons/phone.svg');
+  }
+
+  &--upload {
+    background-image: url('/assets/icons/upload.svg');
+  }
+
+  &--facebook {
+    background-image: url('/assets/icons/facebook.svg');
+  }
+
+  &--twitter {
+    background-image: url('/assets/icons/twitter.svg');
+  }
+
+  &--linkedin {
+    background-image: url('/assets/icons/linkedin.svg');
+  }
+
+  &--arrow {
+    background-image: url('/assets/icons/arrow.svg');
+    width: 31px;
+    height: 14px;
+  }
+}
