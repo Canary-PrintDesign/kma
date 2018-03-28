@@ -1,5 +1,10 @@
 .secondary-nav {
+  display: none;
   justify-content: flex-end;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: inherit;
+  }
 
   a {
     white-space: nowrap;

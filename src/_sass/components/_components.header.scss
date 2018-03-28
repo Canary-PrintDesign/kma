@@ -1,15 +1,12 @@
 .site-header {
-  padding: 14px 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: $color-background--light;
+  @include box-shadow;
 
-  @media screen and (max-width: $bp-tablet - 0.1) {
-    display: none;
-  }
-
-  .wrapper {
-    justify-content: space-between;
-  }
-
-  .site-logo {
-    height: 52px;
+  @media screen and (min-width: $bp-desktop) {
+    position: static;
   }
 }
