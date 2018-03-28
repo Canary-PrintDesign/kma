@@ -13,6 +13,10 @@ contact:
     value: 12503904131
     display: 1 (250) 390-4131
   email: 'info@kmacpa.ca'
+  twitter: 'https://twitter.com/KMACPACA'
+  linkedin: 'https://www.linkedin.com/in/douglas-parkhurst-fcpa-fca-cpa-illinois-30a58a39'
+  facebook: 'https://www.facebook.com/KMACPA.CA'
+  upload: 'https://upload-kmacpa.titanfile.com/'
 
 collections:
 - features
