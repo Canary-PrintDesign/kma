@@ -24,8 +24,6 @@
                   a(href="/services/personal-taxes#estate-planning") Estate Planning
                 li
                   a(href="/services/personal-taxes#business-valuations") Business Valuations
-                li
-                  a.main(href="/services/tax-forms") Tax Forms
               ul.column
                 li
                   a.main(href="/services/us-taxes") U.S. Taxes
@@ -60,8 +58,10 @@
                   a(href="/services/business#corporate-restructuring") Corporate Restructuring
                 li
                   a(href="/services/business#starting") Starting A Business
-                li
-                  a.main(href="/") Secure File Upload
+
+        li
+          a(class="{% if page.class contains 'about' %}is-active{% endif %}", href="/services/tax-forms")
+            span Tax Forms
         li
           a(class="{% if page.class contains 'about' %}is-active{% endif %}", href="/about")
             span About
