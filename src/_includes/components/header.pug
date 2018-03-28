@@ -1,8 +1,11 @@
 header.site-header
-  .wrapper
+  .brand-header.wrapper
+    label(for="mobile-nav").mobile-nav-toggle
+      i.icon
+
     a.site-logo(href="/") {{ site.name }}
 
-    nav.secondary-nav
+    .secondary-nav
       a.nav--tel(href="#")
         i.icon--tel
         | {{ site.contact.tel }}
@@ -23,3 +26,5 @@ header.site-header
       a.nav--linkedin(href="#")
         i.icon--linkedin
         span.image-replacement Linkedin
+
+  | {% include components/site-nav %}

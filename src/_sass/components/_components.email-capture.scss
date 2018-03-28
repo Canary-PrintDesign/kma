@@ -1,4 +1,12 @@
 .email-capture {
+  @media screen and (max-width: $bp-tablet - 0.1) {
+    display: none
+  }
+
+
+
+
+
   position: relative;
   color: $color-text--light;
   padding-top: 92px;
