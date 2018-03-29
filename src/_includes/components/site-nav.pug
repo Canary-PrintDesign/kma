@@ -5,7 +5,7 @@
           a(class="{% if page.class contains 'home' %}is-active{% endif %}", href="/")
             span Home
         li
-          a(class="{% if page.class contains 'services' %}is-active{% endif %}", href="#")
+          div(class="{% if page.class contains 'services' %}is-active{% endif %}").link
             span Services
           ul
             li.mega-menu.wrapper
