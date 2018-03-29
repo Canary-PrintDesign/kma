@@ -45,7 +45,8 @@
     }
   }
 
-  a {
+  a,
+  .link {
     display: block;
     text-decoration: none;
     padding: $gutter $gutter--medium;
@@ -76,8 +77,10 @@
   li li a {
     padding-left: $gutter--medium * 2;
     text-transform: inherit;
+    display: none;
 
     @media screen and (min-width: $bp-desktop) {
+      display: block;
       padding-left: $gutter--medium * 2;
       color: $color-text-body;
       font-weight: 500;
@@ -87,6 +90,7 @@
     }
 
     &.main {
+      display: block;
       @media screen and (min-width: $bp-desktop) {
         color: $color-text-body;
         font-weight: 700;
