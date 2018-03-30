@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 700;
+
+    @include body-large;
+  }
+
+  input {
+    height: 46px;
+    border: 1px solid $color-grey;
+    margin-bottom: 10px;
+    padding-left: $gutter--medium;
+    padding-right: $gutter--medium;
+  }
+
+  textarea {
+    border: 1px solid $color-grey;
+    padding: $gutter--medium;
+  }
+
+  button {
+    margin-top: 40px;
+  }
+}
