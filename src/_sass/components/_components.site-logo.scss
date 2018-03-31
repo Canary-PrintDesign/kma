@@ -12,4 +12,9 @@
     margin: 0;
     background-position: center left;
   }
+
+  &:hover,
+  &:active {
+    color: transparent;
+  }
 }

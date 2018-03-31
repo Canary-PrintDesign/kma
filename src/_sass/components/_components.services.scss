@@ -16,7 +16,7 @@
   border-radius: 5px;
   overflow: hidden;
   flex-basis: 100%;
-  margin-bottom: $gutter--medium;
+  magin-bottom: $gutter--medium;
 
   @include box-shadow;
 
@@ -64,7 +64,7 @@
     }
 
     @media screen and (min-width: $bp-large) {
-      margin: 30px 40px 60px;
+      margin: 30px;
     }
   }
 

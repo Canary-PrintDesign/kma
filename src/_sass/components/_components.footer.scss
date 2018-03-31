@@ -32,6 +32,10 @@
       color: $color-text--light;
 
       @include body-large;
+
+      &:hover {
+        color: $color-brand-three;
+      }
     }
   }
 

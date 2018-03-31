@@ -73,6 +73,10 @@
     color: $color-text-body;
     font-weight: bold;
     font-style: italic;
+
+    &:hover {
+      color: $color-text--light;
+    }
   }
 }
 

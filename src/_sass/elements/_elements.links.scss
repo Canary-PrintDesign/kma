@@ -1,0 +1,13 @@
+a {
+  color: $color-brand-three;
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: $color-brand-one;
+  }
+
+  &:active{
+    color: $color-brand-two;
+  }
+}

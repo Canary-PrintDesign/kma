@@ -9,6 +9,7 @@
   border-width: 0;
   padding: 9px 15px;
   cursor: pointer;
+  transition: all 300ms ease-in-out;
 
   @include body;
   @include h5;
@@ -17,11 +18,34 @@
     padding: 18px 30px;
   }
 
+
+  &:hover {
+    background-color: lighten($color-brand-three, 10%);
+  }
+
   &--ghost {
-    background: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 50.1%,rgba(255,255,255,0) 99%);
+    background-size: 200%;
+    background-position: right;
     border-width: 2px;
     border-style: solid;
     font-weight: 700;
+    transition-property: color, background-position;
+    transition: 300ms ease-in-out;
+
+    path {
+      transition: fill 300ms ease-in-out;
+    }
+
+    &:hover {
+      color: $color-brand-three;
+      background-position: left;
+
+      path {
+        fill: $color-brand-three;
+      }
+    }
   }
 
   &--round {
@@ -30,6 +54,10 @@
 
   &--accent {
     background-color: $color-brand-one;
+
+    &:hover {
+      background-color: lighten($color-brand-one, 10%);
+    }
   }
 
   &--block {
@@ -50,4 +78,10 @@
 a.button {
   display: inline-block;
   text-decoration: none;
+
+  &:hover {
+    color: $color-text--light;
+  }
 }
+
+
