@@ -8,6 +8,7 @@
     padding-bottom: 40px;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   h1 {
@@ -22,6 +23,7 @@
   nav {
     display: flex;
     justify-content: space-between;
+    margin-bottom: $gutter--large;
 
     a {
       margin-left: $gutter--medium;
@@ -32,11 +34,19 @@
       @include body-large;
     }
   }
+
+  .cpa-logo {
+    height: 52px;
+    margin-bottom: $gutter--large;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 
 .site-copyright {
-  margin-top: 60px;
-
   @include small;
 
   a {

@@ -33,6 +33,7 @@
 @import "elements/elements.buttons";
 @import "elements/elements.sections";
 @import "elements/elements.articles";
+@import "elements/elements.forms";
 
 @import "components/components.header";
 @import "components/components.brand-header";
@@ -49,3 +50,6 @@
 @import "components/components.contact";
 @import "components/components.footer";
 @import "components/components.mega-nav";
+
+@import "pages/pages.barber-and-haime";
+@import "pages/pages.contact";

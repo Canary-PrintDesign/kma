@@ -6,25 +6,17 @@ header.site-header
     a.site-logo(href="/") {{ site.name }}
 
     .secondary-nav
-      a.nav--tel(href="#")
+      a.nav--tel(href="tel:{{ site.contact.tel.value }}")
         i.icon--tel
-        | {{ site.contact.tel }}
+        | {{ site.contact.tel.display }}
 
-      a.nav--upload(href="#")
+      a.nav--upload(href="{{ site.contact.upload }}")
         i.icon--upload
         span Secure File
         | Upload
 
-      a.nav--facebook(href="#")
+      a.nav--facebook(href="{{ site.contact.facebook }}")
         i.icon--facebook
         span.image-replacement Facebook
-
-      a.nav--twitter(href="#")
-        i.icon--twitter
-        span.image-replacement Twitter
-
-      a.nav--linkedin(href="#")
-        i.icon--linkedin
-        span.image-replacement Linkedin
 
   | {% include components/site-nav %}

@@ -3,13 +3,12 @@
 <html class="no-js" lang="{{site.language}}">
 {% include html/head.html %}
 
-<body{% if page.body-class != null %}class="{{page.body-class}}"{% endif %}>
+<body {% if page.class != null %}class="{{page.class}}"{% endif %}>
   {% include mobile-nav.pug %}
   {% include components/header.pug %}
 
   <main>
   {{content}}
-  {% include components/contact.pug %}
   {% include components/footer.pug %}
   </main>
 
