@@ -7,16 +7,16 @@ header.site-header
 
     .secondary-nav
       a.nav--tel(href="tel:{{ site.contact.tel.value }}")
-        i.icon--tel
+        i.icon--tel.icon--inline {% include icons/phone.svg %}
         | {{ site.contact.tel.display }}
 
       a.nav--upload(href="{{ site.contact.upload }}")
-        i.icon--upload
+        i.icon--facebook.icon--inline {% include icons/upload.svg %}
         span Secure File
         | Upload
 
       a.nav--facebook(href="{{ site.contact.facebook }}")
-        i.icon--facebook
+        i.icon--facebook.icon--inline {% include icons/facebook.svg %}
         span.image-replacement Facebook
 
   | {% include components/site-nav %}

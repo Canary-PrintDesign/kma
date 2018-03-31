@@ -12,6 +12,12 @@
     margin-left: 15px;
     color: $color-grey;
     text-decoration: none;
+    transition-property: color, background-color;
+    transition: 300ms ease-in-out;
+
+    path {
+      transition: fill 300ms ease-in-out;
+    }
 
     @include body;
     @include display;
@@ -29,6 +35,23 @@
     i {
       height: 30px;
       width: 30px;
+      display: block;
+    }
+
+    &:hover {
+      color: $color-brand-three;
+
+      path {
+        fill: $color-brand-three;
+      }
+    }
+
+    &:active {
+      color: $color-brand-two;
+
+      path {
+        fill: $color-brand-two;
+      }
     }
 
     span {
