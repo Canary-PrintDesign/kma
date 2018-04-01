@@ -1,0 +1,13 @@
+- url: tel:12503904131
+  text: 1 (250) 390-4131
+  icon: phone
+
+- url: https://upload-kmacpa.titanfile.com
+  text: Secure File Upload
+  icon: upload
+
+- url: https://www.facebook.com/KMACPA.CA
+  text: Facebook
+  icon: facebook
+  class: image-replacement
+
