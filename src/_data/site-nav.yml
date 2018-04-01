@@ -1,0 +1,73 @@
+- url: /
+  class: home
+  text: Home
+
+- url: /services
+  type: text
+  class: services
+  text: Services
+  subitems:
+    - list:
+        - text: Personal Taxes
+          url: /services/personal-taxes
+          class: main
+        - url: /services/personal-taxes/#canadian-personal-trust-tax-returns
+          text: Canadian Personal & Trust Tax Returns
+        - url: /services/personal-taxes/#final-estate-returns
+          text: Final & Estate Returns
+        - url: /services/personal-taxes/#foreign-reporting
+          text: Foreign Reporting
+        - url: /services/personal-taxes/#canadian-tax-filling-non-residents
+          text: Canadian Tax Filling For Non-Residents
+        - url: /services/personal-taxes/#estate-planning
+          text: Estate Planning
+        - url: /services/personal-taxes/#business-valuations
+          text: Business Valuations
+    - list:
+        - url: /services/us-taxes
+          text: U.S. Taxes
+          class: main
+        - url: /services/us-taxes/#personal-returns
+          text: U.S. Personal Federal & State Returns
+        - url: /services/us-taxes/#obtain-tax-number
+          text: Obtaining a U.S. Tax number (ITIN)
+        - url: /services/us-taxes/#renew-tax-number
+          text: Renewing Your U.S. Tax Number (ITIN)
+        - url: /services/us-taxes/#corporate-returns
+          text: U.S. Corporate Federal & State Returns
+        - url: /services/us-taxes/#foreign-bank-report
+          text: Foreign Bank Account Report (FBAR) - Your Non-US Bank & Investments
+        - url: /services/us-taxes/#reporting-requirements
+          text: Additional U.S. Reporting Requirements
+        - url: /services/us-taxes/#canadian-us-income
+          text: Canadians With U.S. Income
+    - list:
+        - url: /services/business
+          text: Business Services
+          class: main
+        - url: /services/business/#accounting-audit
+          text: Accounting & Audit Services
+        - url: /services/business/#corporate-tax
+          text: Corporate Tax Services
+        - url: /services/business/#consulting
+          text: Consulting Services
+        - url: /services/business/#succession-planning
+          text: Succession Planning
+        - url: /services/business/#bookkeeping
+          text: Bookkeeping & Payroll Services
+        - url: /services/business/#corporate-restructuring
+          text: Corporate Restructuring
+        - url: /services/business/#starting
+          text: Starting A Business
+
+- url: /services/tax-forms
+  class: tax-forms
+  text: Tax Forms
+
+- url: /about
+  class: about
+  text: About
+
+- url: /contact
+  class: page-contact
+  text: Contact

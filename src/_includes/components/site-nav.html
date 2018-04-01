@@ -1,0 +1,13 @@
+<div class="site-nav">
+  <div class="wrapper">
+    <ul>
+      {% for item in site.data.site-nav %}
+      <li>
+        {% include components/nav-item.html item=item %}
+
+        {% include components/nav-subitems.html item=item %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
