@@ -1,15 +1,23 @@
-- title: Personal Taxes
+- title: |
+    Personal
+    Taxes
   text: We prepare everything from the simplest to most complex personal returns
   url: /services/personal-taxes
 
-- title: U.S. Taxes
+- title: |
+    U.S.
+    Taxes
   text: We offer services for U.S. citizens, greencard holders and those that have U.S. filing requirements
   url: /services/us-taxes
 
-- title: Business Services
+- title: |
+    Business
+    Services
   text: Our financial statement assurance services are timely, efficient and informative
   url: /services/business
 
-- title: Tax Forms
+- title: |
+    Tax
+    Forms
   text: We have many Tax Forms available for FREE download in PDF format
   url: /services/tax-forms
