@@ -2,7 +2,7 @@
   class: home
   text: Home
 
-- url: /services
+- url: /#services
   type: text
   class: services
   text: Services
