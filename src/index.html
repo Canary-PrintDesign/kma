@@ -10,11 +10,9 @@ class: home
 
 {% include components/service_list.pug %}
 
-{% include content/who_are_we.pug %}
-
-{% include content/income_tax.pug %}
-
-{% include content/accounting.pug %}
+{% include components/feature.html item=site.data.features.first %}
+{% include components/feature.html item=site.data.features.second %}
+{% include components/feature.html item=site.data.features.third %}
 
 {% include components/advice-centre.html %}
 
@@ -22,4 +20,4 @@ class: home
 {% include components/email_capture.pug %}
 {% endcomment %}
 
-{% include content/combining_forces.pug %}
+{% include components/feature.html item=site.data.features.fourth %}

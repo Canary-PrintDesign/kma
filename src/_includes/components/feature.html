@@ -1,0 +1,19 @@
+<section class="feature feature--{{ include.item.class }}">
+  <div class="wrapper">
+    <h1>{{ include.item.title }}</h1>
+
+    <div class="image"><img src="{{ include.item.image }}" /></div>
+
+    <div class="content">
+      {% for paragraph in include.item.content %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+
+      {% if include.item.url %}
+        <p>
+          <a class="button button--accent" href="{{ include.item.url }}">Learn More</a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</section>
