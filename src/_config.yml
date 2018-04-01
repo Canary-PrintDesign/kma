@@ -8,13 +8,6 @@ baseurl:     /     # root
 url:         ""    # primary url the website will reside at
 
 # !- Content Details
-contact:
-  tel:
-    value: 12503904131
-    display: 1 (250) 390-4131
-  email: 'info@kmacpa.ca'
-  facebook: 'https://www.facebook.com/KMACPA.CA'
-  upload: 'https://upload-kmacpa.titanfile.com/'
 
 collections:
 - features

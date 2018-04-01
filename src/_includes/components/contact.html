@@ -1,0 +1,33 @@
+<section class="contact" id="contact">
+  <div class="wrapper">
+    <div class="content">
+      <h1>Contact</h1>
+
+      {% for paragraph in site.data.contact.details %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+
+      <div itemscope itemtype="//schema.org/Organization">
+        <dl>
+          <dt>Phone</dt>
+          <dd>{% include components/phone.html item=site.data.contact.phone %}</dd>
+          <dt>Email</dt>
+          <dd>{% include components/email.html email=site.data.contact.email %}</dd>
+        </dl>
+
+        <p>
+          {% include components/address.html item=site.data.contact.address %}
+        </p>
+
+        <p>
+          Mailing Address: <br />
+          {% include components/address.html item=site.data.contact.mail-address %}
+        </p>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="{{ site.data.contact.map }}" frameborder="0" style="border: 0;" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
