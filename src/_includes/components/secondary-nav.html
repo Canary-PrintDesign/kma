@@ -1,0 +1,8 @@
+<nav class="secondary-nav">
+  {% for item in site.data.secondary-nav %}
+    <a href="{{ item.url }}">
+      <i class="icon--inline">{% include icons/{{ item.icon }}.svg %}</i>
+      <span class="{{ item.class }}">{{ item.text }}</span>
+    </a>
+  {% endfor %}
+</nav>

@@ -1,0 +1,5 @@
+{% if include.item.text %}
+  <a class="{{ include.item.class }} {% if page.class contains include.item.class %}is-active{% endif %}" href="{{ include.item.url }}">
+    <span>{{ include.item.text }}</span>
+  </a>
+{% endif %}

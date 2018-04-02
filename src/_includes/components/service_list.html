@@ -1,0 +1,13 @@
+<section class="services">
+  <h1 id="services">Services</h1>
+
+  <div class="wrapper list">
+    {% for item in site.data.services %}
+      <div class="service">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.text }}</p>
+        <a class="button button--block" href="{{ item.url }}">Learn More</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

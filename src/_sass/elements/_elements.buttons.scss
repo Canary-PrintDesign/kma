@@ -39,7 +39,7 @@
     }
 
     &:hover {
-      color: $color-brand-three;
+      color: $color-brand-three !important;
       background-position: left;
 
       path {
