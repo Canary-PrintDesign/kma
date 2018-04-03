@@ -2,22 +2,20 @@
   <h1>Advice Centre</h1>
 
   <div class="wrapper">
-    <div class="list">
-      {% for item in site.data.advice-centre %}
-        <div class="advice-card">
-          <header>
-            <h1>{{ item.title }}</h1>
-          </header>
+    {% for item in site.data.advice-centre %}
+      <div class="advice-card">
+        <header>
+          <h1>{{ item.title }}</h1>
+        </header>
 
-          <div class="content">
-            {% for paragraph in item.content %}
-              <p>{{ paragraph }}</p>
-            {% endfor %}
+        <div class="content">
+          {% for paragraph in item.content %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
 
-            <a href="{{ item.url }}">Read More</a>
-          </div>
+          <a href="{{ item.url }}">Read More</a>
         </div>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
   </div>
 </section>

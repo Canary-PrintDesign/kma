@@ -1,0 +1,29 @@
+section {
+  @include margin-vertical($gutter--large, $gutter);
+  @include screen($bp-desktop) {
+    @include margin-vertical($gutter--xl);
+  }
+
+  > h1 {
+    text-align: center;
+  }
+
+  > h1,
+  > .wrapper > h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    @include font-display;
+    @include h2;
+  }
+}
+
+section + section {
+  @include margin-top($gutter--large);
+  @include screen($bp-desktop) {
+    @include margin-vertical($gutter--xl);
+  }
+}
+
+section:last-of-type {
+  @include margin-bottom(0);
+}

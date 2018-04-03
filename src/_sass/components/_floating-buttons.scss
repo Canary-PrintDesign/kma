@@ -1,0 +1,19 @@
+.floating-buttons {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 25%;
+  transform-origin: bottom right;
+  transform: rotate(-90deg);
+  z-index: 1;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+  }
+
+  a {
+    @include border-radius(top-right, top-left);
+    @include box-shadow;
+    @include margin-right($gutter);
+  }
+}

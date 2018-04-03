@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: bold;
+
+    @include body-large;
+  }
+
+  input {
+    height: -size(46px);
+    border: 1px solid $color-grey;
+
+    @include margin-bottom(10px);
+    @include padding-horizontal-even($gutter);
+  }
+
+  textarea {
+    border: 1px solid $color-grey;
+
+    @include padding($gutter);
+  }
+
+  button {
+    @include margin-top(40px);
+  }
+}

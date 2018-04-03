@@ -1,0 +1,42 @@
+.secondary-nav {
+  display: none;
+
+  @include screen($bp-desktop) {
+    display: inherit;
+  }
+
+  a {
+    color: $color-grey;
+    display: flex;
+    @include margin-left($gutter);
+    @include transition(color, background-color);
+    @include font-display;
+
+    &:first-of-type {
+      @include margin-left(0);
+    }
+  }
+
+  path {
+    @include transition(fill);
+  }
+
+  i {
+    height: -size(24px);
+    width: -size(24px);
+  }
+
+  span {
+    @include margin-left($gutter--small);
+  }
+
+  a:hover {
+    color: $color-brand-two;
+    @include icon-color($color-brand-two);
+  }
+
+  a:active {
+    color: $color-brand-two;
+    @include icon-color($color-brand-two);
+  }
+}

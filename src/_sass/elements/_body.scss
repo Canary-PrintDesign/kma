@@ -1,0 +1,8 @@
+body {
+  @include font-body;
+  @include padding-top($size-header);
+
+  @media screen and (min-width: $bp-desktop) {
+    @include padding-top(0);
+  }
+}

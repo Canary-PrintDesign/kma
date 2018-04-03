@@ -1,4 +1,4 @@
-<section class="feature feature--{{ include.item.class }}">
+<section class="feature {% if include.item.class %}feature--{{ include.item.class }}{% endif %}">
   <div class="wrapper">
     <h1>{{ include.item.title }}</h1>
 

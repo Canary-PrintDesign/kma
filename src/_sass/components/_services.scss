@@ -1,0 +1,46 @@
+.services {
+  .list {
+    display: flex;
+    @include flex-column-to-row;
+
+    @include screen($bp-desktop) {
+      justify-content: space-between;
+    }
+  }
+
+  .service {
+    text-align: center;
+    @include margin-bottom($gutter);
+    @include box-shadow;
+    @include border-radius;
+    @include screen($bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include flex-even(4, $gutter);
+      @include margin-bottom(0);
+    }
+    @include screen($bp-desktop) {
+      @include flex-even(4, $gutter--large);
+    }
+  }
+
+  h2 {
+    @include margin($gutter);
+    @include font-display;
+    @include h3;
+
+    @include screen($bp-desktop) {
+      white-space: pre;
+      line-height: 1.15;
+    }
+  }
+
+  p {
+    @include margin($gutter);
+  }
+
+  a {
+    @include border-radius(bottom-left, bottom-right);
+  }
+}

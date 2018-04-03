@@ -1,0 +1,27 @@
+.back-to-top {
+  display: none;
+
+  @include screen($bp-desktop) {
+    display: inherit;
+    position: fixed;
+    bottom: -size($gutter);
+    right: -size($gutter);
+    background-color: rgba(255, 255, 255, 0.7);
+
+    @include box-shadow;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $color-grey;
+    @include padding($gutter--small, $gutter);
+  }
+
+  i {
+    height: -size(16px);
+    width: -size(16px);
+    @include margin-right($gutter--small);
+    @include icon-color(currentColor);
+  }
+}

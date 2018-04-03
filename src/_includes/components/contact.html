@@ -15,14 +15,9 @@
           <dd>{% include components/email.html email=site.data.contact.email %}</dd>
         </dl>
 
-        <p>
-          {% include components/address.html item=site.data.contact.address %}
-        </p>
+        {% include components/address.html item=site.data.contact.address %}
+        {% include components/address.html item=site.data.contact.mail-address name="Mailing Address" %}
 
-        <p>
-          Mailing Address: <br />
-          {% include components/address.html item=site.data.contact.mail-address %}
-        </p>
       </div>
     </div>
 
