@@ -77,3 +77,6 @@ web-app-color:   "" # used for Windows 8 / RT
 # Identifies a resource file, such as an image or a CSS stylesheet, to be downloaded into the cache.
 #prefetch:
 #  - "http://example.com/css/style.css"
+
+kramdown:
+  parse_block_html: true
