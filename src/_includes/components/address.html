@@ -1,5 +1,6 @@
-<span itemprop="address" itemscope itemtype="//schema.org/PostalAddress">
+<div class="address" itemprop="address" itemscope itemtype="//schema.org/PostalAddress">
+  {% if include.name %}{{ include.name }}<br />{% endif %}
   <span itemprop="streetAddress">{{ include.item.street }}</span>
   <span itemprop="addressLocality">{{ include.item.city }}, {{ include.item.state }}</span>
   <span itemprop="postalCode">{{ include.item.zip }}</span>
-</span>
+</div>

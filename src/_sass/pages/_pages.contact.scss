@@ -56,7 +56,7 @@
     font-weight: 700;
     margin-bottom: 20px;
 
-    @include display;
+    @include font-display;
     @include h3;
   }
 

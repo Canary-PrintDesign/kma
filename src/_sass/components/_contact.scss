@@ -1,0 +1,39 @@
+.contact {
+  background-color: $color-grey--light;
+
+  .wrapper {
+    @include flex-column-to-row($bp-tablet);
+    @include padding-vertical($gutter);
+    @include screen($bp-tablet) {
+      @include flex-children-half($gutter, space-between);
+    }
+    @include screen($bp-desktop) {
+      @include padding-vertical($gutter--xl);
+      @include flex-children-half($gutter--xl, space-between);
+    }
+  }
+
+  .map {
+    border: -size(8px) solid $color-grey--lightest;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  dt {
+    display: inline;
+    width: auto;
+
+    &:after {
+      content: ': '
+    }
+  }
+
+  dd {
+    display: inline;
+    @include margin-left(0);
+    @include line-break;
+  }
+}

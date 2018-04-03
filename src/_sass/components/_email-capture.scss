@@ -1,0 +1,101 @@
+.email-capture {
+  position: relative;
+  color: $color-text--light;
+  max-width: 1920px;
+
+  @include margin-center;
+  @include padding-vertical-even(92px);
+
+  .image {
+    background-image: url('/assets/img/people-woman-coffee-meeting.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('/assets/img/bg_overlay-solid.svg');
+    }
+  }
+
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  .content {
+    @include margin-bottom($gutter--large);
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+      flex: 1 0 50%;
+    }
+  }
+
+  h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    @include h2;
+    @include font-display;
+  }
+
+  p {
+    font-weight: lighter;
+    text-transform: capitalize;
+    white-space: pre-line;
+
+    @include font-display;
+    @include h3;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex: 1 0 50%;
+    }
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  label {
+    font-weight: bold;
+
+    @include body-large;
+  }
+
+  input {
+    height: -size(46px);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+
+    @include margin-bottom(10px);
+  }
+
+  button {
+    flex: 0 0;
+    @include margin-top(40px);
+  }
+}

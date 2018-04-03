@@ -1,0 +1,7 @@
+[itemprop=address] {
+  @include margin-bottom($gutter);
+
+  [itemprop=streetAddress] {
+    @include line-break;
+  }
+}

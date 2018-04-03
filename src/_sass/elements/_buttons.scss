@@ -1,0 +1,89 @@
+/*
+
+  Buttons
+  ---
+
+*/
+
+.button {
+  color: $color-text--light;
+  background-color: $color-brand-three;
+  border-color: currentColor;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-align: center;
+  border-width: 0;
+  cursor: pointer;
+
+  @include padding($gutter--small, $gutter);
+  @include transition;
+  @include h5;
+
+  @media screen and (min-width: $bp-tablet) {
+    @include padding(18px, 30px);
+  }
+
+  &:hover {
+    background-color: lighten($color-brand-three, 10%);
+  }
+
+  &--ghost {
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 22%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 50.1%,rgba(255,255,255,0) 99%);
+    background-size: 200%;
+    background-position: right;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+
+    @include transition(color, background-position);
+
+    path {
+      @include transition(fill);
+    }
+
+    &:hover {
+      color: $color-brand-three !important;
+      background-position: left;
+
+      path {
+        fill: $color-brand-three;
+      }
+    }
+  }
+
+  &--round {
+    border-radius: -size(100px); // over the top but rounds evenly
+  }
+
+  &--accent {
+    background-color: $color-brand-one;
+
+    &:hover {
+      background-color: lighten($color-brand-one, 10%);
+    }
+  }
+
+  &--block {
+    display: block !important;
+    width: 100%;
+  }
+
+  &--short {
+    @include padding-vertical-even(9px);
+  }
+}
+
+.button .icon {
+  @include margin-left(10px);
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text--light;
+  }
+}

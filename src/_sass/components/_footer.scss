@@ -1,0 +1,48 @@
+.site-footer {
+  background-color: $color-brand-two;
+  color: $color-text--light;
+  text-align: center;
+  @include padding-top($gutter);
+
+  a {
+    color: $color-text--light;
+
+    &:hover {
+      color: $color-brand-three;
+    }
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    @include margin-bottom($gutter);
+    @include screen($bp-desktop) {
+      width: -size(768px);
+      @include margin-center;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+
+    }
+  }
+
+  .cpa-logo {
+    height: -size(52px);
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.site-copyright {
+  @include margin-top($gutter);
+  @include small;
+}

@@ -1,0 +1,10 @@
+/*
+
+  Media
+  ---
+
+*/
+
+@mixin screen($breakpoint) {
+  @content
+}

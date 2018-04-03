@@ -1,0 +1,138 @@
+.site-nav {
+  background-color: $color-background--light;
+  display: none;
+  max-height: calc(100vh - -size(#{$size-header}));
+  overflow-y: scroll;
+  position: relative;
+
+  @media screen and (max-width: $bp-desktop - 0.1) {
+    max-width: none;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    display: inherit;
+    background-color: $color-background--dark;
+    overflow: visible;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+    }
+  }
+
+  ul > li > ul {
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  }
+
+  .wrapper > ul > li.hover > ul,
+  .wrapper > ul > li:hover > ul {
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      background-color: $color-background--light;
+      border-bottom: 5px solid $color-background--dark;
+
+      @include box-shadow(0, 4px);
+    }
+  }
+
+  a,
+  .link {
+    display: block;
+    text-decoration: none;
+    @include padding($gutter);
+    display: flex;
+    align-items: center;
+    color: $color-text;
+    @include transition(color, background-position);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200%;
+    background-position: bottom;
+
+    @media screen and (min-width: $bp-desktop) {
+      color: $color-text--light;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      @include padding(0, $gutter--large);
+      @include body-large;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      height: $size-site-nav;
+    }
+
+    &:hover,
+    &.is-active {
+      background-position: top;
+      color: $color-brand-two;
+    }
+  }
+
+  li li a {
+    text-transform: inherit;
+    display: none;
+
+    @include padding-left($gutter--large);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      color: $color-text;
+      font-weight: normal;
+      height: auto;
+
+      @include margin-vertical-even($gutter);
+      @include h5;
+    }
+
+    &:hover {
+      color: $color-brand-one;
+    }
+
+    &.main {
+      display: block;
+      @media screen and (min-width: $bp-desktop) {
+        color: $color-text;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .mega-menu.wrapper {
+    @media screen and (max-width: $bp-desktop - 0.1) {
+      display: block;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      justify-content: space-between;
+      @include padding-vertical-even($gutter);
+    }
+  }
+
+  .column {
+    @media screen and (min-width: $bp-desktop) {
+      flex-grow: 1;
+      flex-shrink: 1;
+      position: static;
+      display: flex;
+      flex-direction: column;
+
+      max-width: calc((100% - (2 * -size(#{$gutter}))) / 3);
+
+      li {
+        @include margin-bottom($gutter);
+      }
+    }
+  }
+}

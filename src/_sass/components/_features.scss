@@ -1,0 +1,64 @@
+.feature {
+  .wrapper {
+    @include flex-column-to-row($bp-desktop);
+    @include flex-nowrap-to-wrap;
+    @include flex-children-half($gutter, space-between);
+    @include screen($bp-large) {
+      @include flex-children-half($gutter--large, space-between);
+    }
+  }
+
+  .image {
+    @include margin-horizontal(-$gutter);
+    @include margin-bottom($gutter);
+    @include screen($bp-desktop) {
+      @include margin-bottom(0);
+    }
+  }
+
+  h1 {
+    @include screen($bp-desktop) {
+      flex-basis: 100% !important;
+    }
+  }
+}
+
+.feature {
+  .image {
+    order: 1;
+    @include screen($bp-desktop) {
+      order: 3;
+    }
+  }
+
+  h1 {
+    order: 2;
+    @include screen($bp-desktop) {
+      order: 1;
+    }
+  }
+
+  .content {
+    order: 3;
+
+    @include screen($bp-desktop) {
+      order: 2;
+    }
+  }
+
+  p:last-of-type {
+    @include screen($bp-desktop) {
+      @include margin-bottom(0);
+    }
+  }
+}
+
+.feature--even {
+  .image {
+    order: 2;
+  }
+
+  .content {
+    order: 3;
+  }
+}

@@ -1,0 +1,10 @@
+nav {
+  ul {
+    list-style: none;
+    @include margin(0);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

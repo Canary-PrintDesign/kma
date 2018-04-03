@@ -1,7 +1,0 @@
-body {
-  padding-top: $mobile-header-size;
-
-  @media screen and (min-width: $bp-desktop) {
-    padding-top: 0;
-  }
-}

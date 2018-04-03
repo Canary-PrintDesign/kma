@@ -1,0 +1,21 @@
+/*
+
+  Typography
+  ---
+
+*/
+
+$base-font-size: 16px;
+$global-font-size: -size($base-font-size);
+$global-line-height: -size($base-font-size * 1.5);
+$global-font-smoothing: false !default;
+$global-type-legible: false !default;
+
+@debug $global-line-height;
+
+$fonts: (
+  body: 'ClearSans',
+  display: 'Aileron',
+);
+
+
