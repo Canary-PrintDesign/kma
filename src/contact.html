@@ -1,0 +1,45 @@
+---
+title: Contact
+permalink: /contact/index.html
+layout: article
+class: page-contact
+hide-contact: true
+---
+
+<div class="wrapper">
+  <div class="content">
+    <div itemscope itemtype="//schema.org/Organization">
+      <dl>
+        <dt>Phone</dt>
+        <dd>{% include components/phone.html item=site.data.contact.phone %}</dd>
+        <dt>Email</dt>
+        <dd>{% include components/email.html email=site.data.contact.email %}</dd>
+      </dl>
+
+      {% include components/address.html item=site.data.contact.address %}
+
+      {% include components/address.html item=site.data.contact.mail-address name="Mailing Address" %}
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.3642330699577!2d-124.07657908332402!3d49.25054187932773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488992f58da00df%3A0x8654d30b29b5617b!2s7190+Lantzville+Rd%2C+Lantzville%2C+BC+V0R+2H0!5e0!3m2!1sen!2sca!4v1521776908261" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <form method="post" action="https://static-files.canaryprint.ca/kmacpa.com/mailer.php" id="ajax-contact">
+    <label for="name">Name</label>
+    <input name="name" id="name" />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" required id="email" />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" name="phone" id="phone" />
+
+    <label for="message">Your Message</label>
+    <textarea name="message" rows="8" required id="message"></textarea>
+
+    <button class="button" type="submit">Submit</button>
+  </form>
+</div>
