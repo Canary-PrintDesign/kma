@@ -1,5 +1,6 @@
 .advice-centre {
   .wrapper {
+    display: flex;
     @include flex-column-to-row($bp-desktop);
     @include screen($bp-desktop) {
       @include flex-children-even(3, $gutter, space-between);

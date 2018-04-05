@@ -5,11 +5,9 @@
 
 */
 
-@mixin wrapper {
-  display: flex;
+@mixin wrapper-sizing {
   width: 100%;
   max-width: calc(100vw - (2 * #{$gutter}));
-  @include margin-center;
 
   @media screen and (min-width: $bp-tablet) {
     max-width: calc(#{$bp-tablet} - (2 * #{$gutter}));
@@ -24,7 +22,7 @@
   }
 
   @media screen and (min-width: $bp-extra-large + 0.1) {
-    max-width: $bp-extra-large;
+    max-width: calc(#{$bp-extra-large} - (2 * #{$gutter--large}));
   }
 
   > *:last-child {
@@ -34,6 +32,11 @@
   > *:first-child {
     margin-top: 0 !important;
   }
+}
+
+@mixin wrapper {
+  @include margin-center;
+  @include wrapper-sizing;
 }
 
 [class*="wrapper"] {
