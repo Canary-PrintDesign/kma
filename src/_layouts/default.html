@@ -10,8 +10,12 @@
 
   <main>
   {{content}}
-  {% include components/footer.html %}
   </main>
+
+  {% if page.hide-contact != true %}
+    {% include components/contact.html %}
+  {% endif %}
+  {% include components/footer.html %}
 
   {% include scripts.html %}
   {% include html/analytics.html %}
