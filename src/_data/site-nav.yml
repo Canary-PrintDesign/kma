@@ -4,20 +4,20 @@
 
 - url: /#services
   type: text
-  class: services
+  class: service
   text: Services
   subitems:
     - list:
         - text: Personal Taxes
           url: /services/personal-taxes
           class: main
-        - url: /services/personal-taxes/#canadian-personal-trust-tax-returns
+        - url: /services/personal-taxes/#canadian-personal-and-trust-tax-returns
           text: Canadian Personal & Trust Tax Returns
-        - url: /services/personal-taxes/#final-estate-returns
+        - url: /services/personal-taxes/#final-and-estate-returns
           text: Final & Estate Returns
         - url: /services/personal-taxes/#foreign-reporting
           text: Foreign Reporting
-        - url: /services/personal-taxes/#canadian-tax-filling-non-residents
+        - url: /services/personal-taxes/#canadian-tax-filings-for-non-residents
           text: Canadian Tax Filling For Non-Residents
         - url: /services/personal-taxes/#estate-planning
           text: Estate Planning
@@ -27,37 +27,37 @@
         - url: /services/us-taxes
           text: U.S. Taxes
           class: main
-        - url: /services/us-taxes/#personal-returns
+        - url: /services/us-taxes/#us-personal-federal--state-returns
           text: U.S. Personal Federal & State Returns
-        - url: /services/us-taxes/#obtain-tax-number
+        - url: /services/us-taxes/#obtaining-a-us-tax-number-itin
           text: Obtaining a U.S. Tax number (ITIN)
-        - url: /services/us-taxes/#renew-tax-number
+        - url: /services/us-taxes/#renewing-your-us-tax-number-itin
           text: Renewing Your U.S. Tax Number (ITIN)
-        - url: /services/us-taxes/#corporate-returns
+        - url: /services/us-taxes/#us-corporate-federal--state-returns
           text: U.S. Corporate Federal & State Returns
-        - url: /services/us-taxes/#foreign-bank-report
+        - url: /services/us-taxes/#foreign-bank-account-report-fbar--fincen-114--reporting-your-non-us-bank-and-investment-accounts
           text: Foreign Bank Account Report (FBAR) - Your Non-US Bank & Investments
-        - url: /services/us-taxes/#reporting-requirements
+        - url: /services/us-taxes/#additional-us-reporting-requirements
           text: Additional U.S. Reporting Requirements
-        - url: /services/us-taxes/#canadian-us-income
+        - url: /services/us-taxes/#canadians-with-us-income
           text: Canadians With U.S. Income
     - list:
         - url: /services/business
           text: Business Services
           class: main
-        - url: /services/business/#accounting-audit
+        - url: /services/business/#accounting-and-auditing-services
           text: Accounting & Audit Services
-        - url: /services/business/#corporate-tax
+        - url: /services/business/#corporate-tax-services
           text: Corporate Tax Services
-        - url: /services/business/#consulting
+        - url: /services/business/#consulting-services
           text: Consulting Services
         - url: /services/business/#succession-planning
           text: Succession Planning
-        - url: /services/business/#bookkeeping
+        - url: /services/business/#bookkeeping-and-payroll-services
           text: Bookkeeping & Payroll Services
         - url: /services/business/#corporate-restructuring
           text: Corporate Restructuring
-        - url: /services/business/#starting
+        - url: /services/business/#starting-a-business
           text: Starting A Business
 
 - url: /services/tax-forms
