@@ -17,5 +17,6 @@ class: tax-forms
 + [Statement of Employment Expenses](/assets/forms/statement_of_employment_expenses.pdf)
 + [Statement of Real Estate Rentals USD](/assets/forms/statement_of_real_estate_rentals_usd.pdf)
 + [Tools for Preparing Personal Taxes](/assets/forms/tools_for_preparing_personal_taxes.pdf) 
++ [Statement of Real Estate Rentals](/assets/forms/statement-of-real-estate-rentals.pdf)
 </div>
 </section>
