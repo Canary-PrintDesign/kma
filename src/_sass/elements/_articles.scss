@@ -1,102 +1,91 @@
+article [class*="wrapper"] {
+  @include screen($bp-large) {
+    max-width: 1120px;
+  }
+}
+
 article {
   @include margin-top($gutter);
-
-  @media screen and (min-width: $bp-tablet) {
+  @include screen($bp-desktop) {
     @include margin-top($gutter--large);
   }
 
   > h1 {
     text-align: center;
 
-    @include margin-center;
-    @include font-display;
-    @include h1;
-
     span {
       position: relative;
+    }
 
-      &::after {
-        position: absolute;
-        content: '';
-        display: block;
-        height: 3px;
-        left: 0;
-        right: 0;
-
-        background: linear-gradient(to right, transparent 9.9%, currentColor 10%, currentColor 90%, transparent 90.1%);
-      }
+    span::after {
+      position:absolute;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to right, transparent 9.9%, currentColor 10%, currentColor 90%, transparent 90.1%);
     }
   }
 
-  p {
-    @include margin-bottom($gutter);
-  }
-
   section {
-    flex-direction: column;
+    @include margin-bottom(0);
 
-    @include wrapper;
+    &:nth-of-type(2n+2) {
+      background-color: $color-brand-three--light;
+      @include padding-vertical($gutter--xl);
+    }
 
-    h1 {
-      text-align: left;
-      font-weight: normal;
+    .wrapper {
+      @include columns(null, $gutter--xl, 50ch);
+    }
 
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1;
       @include font-display;
-      @include h2;
+      @include column-span;
+      @include margin-vertical($gutter--large, $gutter);
     }
 
     h2 {
       font-weight: bold;
-
-      @include margin-vertical($gutter--large, $gutter);
       @include h4;
-      @include font-display;
-
-      @media screen and (min-width: $bp-desktop) {
-        @include margin-bottom($gutter--large);
-      }
     }
 
-    ul {
-      @include avoid-column-break;
+    h3 {
+      @include h5;
     }
-  }
 
-  [class^=columns] {
-    @media screen and (min-width: $bp-tablet) {
-      @include margin-bottom($gutter--large);
+    li {
+      @include margin-bottom($gutter--small);
     }
-  }
 
-  aside {
-    .definition {
-      display: flex;
-      flex-direction: column;
+    aside {
+      display: grid;
+      grid-gap: $gutter;
+      grid-template-columns: 1fr 2fr;
+      @include column-span;
 
-      @include margin-bottom($gutter--large);
-
-      @media screen and (min-width: $bp-tablet) {
-        flex-direction: row;
+      h4 {
+        @include margin(0);
+        @include screen($bp-desktop) {
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row: span 3;
+          align-content: start;
+          @include body-large;
+        }
       }
 
-      h1 {
-        flex-basis: 25%;
-        font-weight: 700;
-
-        @include margin-right($gutter);
-        @include font-display;
-        @include h5;
-      }
-
-      .details {
-        flex-basis: 75%;
+      p {
+        @include margin-vertical(0, $gutter);
+        @include screen($bp-desktop) {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
       }
     }
-  }
-
-  .alternate {
-    background-color: $color-brand-three--light;
-
-    @include padding($gutter);
   }
 }
+
+
