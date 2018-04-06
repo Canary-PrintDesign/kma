@@ -27,11 +27,11 @@ plugins:
   - jekyll-sitemap
 
 # !- Site Configuration
-name:      "KMA Chartered Professional Accountants LTD." # Site title
+name:      "KMA Chartered Professional Accountants" # Site title
 name-safe: "kma-cpa" # Url safe version of site title. eg: "lowercase-dash-separated-text"
 tagline:   "Trusted Accounting Services" # Website tagline
 license:   "GNU GPL v3 http://www.gnu.org/licenses/gpl-3.0.en.html"
-copyright: "KMA Chartered Professional Accountants LTD." # Will format out to "©2013 Company Name Inc. All rights reserved."
+copyright: "KMA Chartered Professional Accountants" # Will format out to "©2013 Company Name Inc. All rights reserved."
 webmaster: "kma@canaryprint.ca" # email address for master of website
 title-delimiter: " • " # Symbol to separate page title and site title. Include spaces. eg: "Home • Site Title"
 language:  "en-US" # base language for website
