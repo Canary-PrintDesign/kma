@@ -25,27 +25,3 @@ We believe that we always produce work of high quality and have developed our au
 
 </div>
 </section>
-
-<section>
-<div class="wrapper">
-
-## Firm Experience
-
-Our firm has experience with an extensive and varied clientele. The scope of this practice includes:
-
-- Major construction companies
-- Consulting and management companies, including lawyers, doctors, chiropractors and engineers
-- The farming and fishing industries
-- The wholesale and retail food industries
-- A number of diversified investment holding companies
-- Logging and wood manufacturing companies
-- Personal income tax returns (Canada and U.S.)
-- Final Returns and non-resident filings
-- Family Trust Returns
-- Trust audits
-- Strata corporations’ audits and reviews
-- Public company audits
-- Not for profit societies
-
-</div>
-</section>
