@@ -43,6 +43,10 @@
 }
 
 .site-copyright {
-  @include margin-top($gutter);
+  @include padding-vertical($gutter);
   @include small;
+
+  a {
+    @include margin-left($gutter);
+  }
 }
