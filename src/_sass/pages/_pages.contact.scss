@@ -2,12 +2,17 @@
   article {
     .wrapper {
       display: flex;
+      @include margin-vertical($gutter--large);
       @include flex-column-to-row($bp-desktop);
-      @include flex-children-half($gutter, space-between);
+      @include flex-children-half($gutter--large, space-between);
+    }
+
+    label {
+      @include margin-vertical($gutter);
     }
   }
 
-.map {
+  .map {
     iframe {
       width: 100%;
       height: 300px;
