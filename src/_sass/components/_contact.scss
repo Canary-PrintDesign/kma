@@ -2,6 +2,7 @@
   background-color: $color-grey--light;
 
   .wrapper {
+    display: flex;
     @include flex-column-to-row($bp-tablet);
     @include padding-vertical($gutter);
     @include screen($bp-tablet) {

@@ -6,5 +6,13 @@
 */
 
 @mixin screen($breakpoint) {
-  @content
+  @media screen and (min-width: #{$breakpoint}) {
+    @content
+  }
+}
+
+@mixin max-screen($breakpoint) {
+  @media screen and (max-width: #{$breakpoint - 0.1}) {
+    @content;
+  }
 }

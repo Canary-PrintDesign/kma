@@ -38,9 +38,9 @@
 
   p {
     @include margin($gutter);
-  }
 
-  a {
-    @include border-radius(bottom-left, bottom-right);
+    a {
+      @include border-radius(bottom-left, bottom-right);
+    }
   }
 }

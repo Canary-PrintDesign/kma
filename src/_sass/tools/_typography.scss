@@ -2,10 +2,21 @@
   max-width: $measure;
 }
 
-@mixin columns($count: 2, $gap: $gutter--large) {
+@mixin columns($count: 2, $gap: $gutter--large, $width: null) {
+  @if ($width != null) {
+    column-width: $width;
+  } @else {
   column-count: $count;
+  }
+
   column-gap: -size($gap);
-  column-fill: auto;
+  column-fill: balance-all;
+  orphans: 2;
+  widows: 2;
+}
+
+@mixin column-span($count: all) {
+  column-span: $count;
 }
 
 @mixin avoid-column-break {

@@ -1,5 +1,6 @@
 .feature {
   .wrapper {
+    display: flex;
     @include flex-column-to-row($bp-desktop);
     @include flex-nowrap-to-wrap;
     @include flex-children-half($gutter, space-between);

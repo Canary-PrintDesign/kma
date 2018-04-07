@@ -47,9 +47,6 @@
   p {
     color: $color-text--light;
     @include margin-bottom($gutter--large);
-    //white-space: pre-line;
-    //@include margin-bottom($gutter);
-    //@include font-size(22px, 39px);
   }
 
   br {
