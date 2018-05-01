@@ -53,7 +53,7 @@
     align-items: center;
     color: $color-text;
     background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
-    background-size: 200%;
+    background-size: 200% 200%;
     background-position: bottom;
     @include transition(color, background-position);
     @include padding($gutter);
