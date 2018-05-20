@@ -4,8 +4,12 @@ details:
 email: info@kmacpa.ca
 
 phone:
-  value: 12503904131
+  value: +1-250-390-4131
   display: 1 (250) 390-4131
+
+fax:
+  value: +1-250-390-2982
+  display: 1 (250) 390-2982
 
 address:
   street: 7190 Lantzville Road
