@@ -1,0 +1,23 @@
+- name: Douglas Parkhurst
+  designation:
+    - FCPA
+    - FCA
+    - CPA (Illinios)
+  title: Partner
+  email: email@example.com
+
+- name: Douglas Parkhurst
+  designation:
+    - CPA (Illinios)
+  title: Partner
+  email: email@example.com
+
+- name: Douglas Parkhurst
+  designation:
+    - FCPA
+    - FCA
+    - CPA (Illinios)
+  email: email@example.com
+
+- name: Douglas Parkhurst
+  title: Partner
