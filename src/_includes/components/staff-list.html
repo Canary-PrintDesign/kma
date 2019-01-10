@@ -1,0 +1,51 @@
+<div class="staff-list">
+  {% for staff in site.data.staff %}
+    {% assign image = nil %}
+
+    {% if staff.name %}
+      {% for static_file in site.static_files %}
+        {% capture image_path %}/assets/img/staff/{{ staff.name | downcase | replace: ' ', '_'' }}{% endcapture %}
+        {% capture png %}{{ image_path }}.png{% endcapture %}
+        {% capture jpg %}{{ image_path }}.jpg{% endcapture %}
+
+        {% if static_file.path == png %}
+          {% assign image = png %}
+        {% elsif static_file.path == jpg %}
+          {% assign image = jpg %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    <div class="staff-list__member staff-member">
+      {% if image %}
+      <div class="staff-member__image-container">
+        <img class="staff-member__image" src="{{ image }}" />
+      </div>
+      {% endif %}
+
+      <div class="staff-member__details">
+        {% if staff.name %}
+          <div class="staff-member__name">{{ staff.name }}</div>
+        {% endif %}
+
+        {% if staff.title %}
+          <div class="staff-member__title">{{ staff.title }}</div>
+        {% endif %}
+
+        {% if staff.designation %}
+          <ul class="staff-member__designations">
+            {% for designation in staff.designation %}
+              <li class="staff-member__designation">{{ designation }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if staff.email %}
+          <div class="staff-member__email">
+            <a class="staff-member__email-link" href="mailto:{{staff.email}}">{{ staff.email }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
