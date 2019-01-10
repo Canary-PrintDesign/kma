@@ -28,16 +28,16 @@
           <div class="staff-member__name">{{ staff.name }}</div>
         {% endif %}
 
-        {% if staff.title %}
-          <div class="staff-member__title">{{ staff.title }}</div>
-        {% endif %}
-
         {% if staff.designation %}
           <ul class="staff-member__designations">
             {% for designation in staff.designation %}
               <li class="staff-member__designation">{{ designation }}</li>
             {% endfor %}
           </ul>
+        {% endif %}
+
+        {% if staff.title %}
+          <div class="staff-member__title">{{ staff.title }}</div>
         {% endif %}
 
         {% if staff.email %}
