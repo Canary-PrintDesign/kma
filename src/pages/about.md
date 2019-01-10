@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /about/index.html
-layout: article
+layout: about
 class: about
 ---
 
