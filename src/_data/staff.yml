@@ -1,23 +1,101 @@
-- name: Douglas Parkhurst
+- name: Douglas K. Parkhurst
   designation:
-    - FCPA
-    - FCA
-    - CPA (Illinios)
+    - FCPA, FCA, CPA (Illinios)
   title: Partner
-  email: email@example.com
+  email: dparkhurst@kmacpa.ca
 
-- name: Douglas Parkhurst
+- name: Brent Rushton
   designation:
-    - CPA (Illinios)
+    - CPA, CGA
   title: Partner
-  email: email@example.com
+  email: brushton@kmacpa.ca
 
-- name: Douglas Parkhurst
+- name: Alison Gascoigne
   designation:
-    - FCPA
-    - FCA
-    - CPA (Illinios)
-  email: email@example.com
+    - CPA, CGA
+  title: Senior Manager
+  email: agascoigne@kmacpa.ca
 
-- name: Douglas Parkhurst
-  title: Partner
+- name: Kevin Rattray
+  designation:
+    - BBA, CPA, CA
+  title: Senior Accountant
+  email: krattray@kmacpa.ca
+
+- name: Penny Harper
+  designation:
+    -
+  title: Accounting Technician
+  email: pharper@kmacpa.ca
+
+- name: Adrienne Martin
+  designation:
+    -
+  title: Manager
+  email: amartin@kmacpa.ca
+
+- name: Belinda Hannah
+  designation:
+    -
+  title: Accounting Technician
+  email: bhannah@kmacpa.ca
+
+- name: Kelly Falconer
+  designation:
+    -
+  title: Reception
+  email: kfalconer@kmacpa.ca
+
+- name: Terry Moore
+  designation:
+    -
+  title: Administration
+  email: tmoore@kmacpa.ca
+
+- name: Chloe Jung
+  designation:
+    - BAcc, Candidate
+  title:
+  email: cjung@kmacpa.ca
+
+- name: Jason Puglak
+  designation:
+    - BBA
+  title: Accounting Technician
+  email: jpuglak@kmacpa.ca
+
+- name: Steven Hemmerling
+  designation:
+    - B.A. Accounting Major
+  title: Candidate
+  email: shemmerling@kmacpa.ca
+
+- name: Madeleine Zemek
+  designation:
+    -
+  title: Bookkeeper
+  email: mzemek@kmacpa.ca
+
+- name: Michelle Johnson
+  designation:
+    -
+  title: Bookkeeper
+  email: mjohnson@kmacpa.ca
+
+- name: Chessa Dykstra
+  designation:
+    -
+  title: Bookkeeper
+  email: cdyskstra@kmacpa.ca
+
+- name: Debbie Sterling
+  designation:
+    -
+  title: Office Manager
+  email: dsterling@kmacpa.ca
+
+- name: Taylor Agnew
+  designation:
+    -
+  title: Receptionist
+  email: tagnew@kmacpa.ca
