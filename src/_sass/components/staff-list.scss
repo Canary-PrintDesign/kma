@@ -1,8 +1,14 @@
+.partner-link {
+  margin-top: $gutter--large;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .staff-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: $gutter--xl 0;
+  // padding: $gutter--xl 0;
   align-items: center;
 
   @include screen($bp-desktop) {
