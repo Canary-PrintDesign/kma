@@ -17,5 +17,6 @@ class: tax-forms
 + [Statement of Employment Expenses](/assets/forms/statement-of-employment-expenses.pdf)
 + [Statement of Real Estate Rentals CDN](/assets/forms/statement-of-real-estate-rentals.pdf)
 + [Statement of Real Estate Rentals USD](/assets/forms/statement-of-real-estate-rentals-usd.pdf)
++ [Real Estate Checklist](/assets/forms/real-estate-checklist.pdf)
 </div>
 </section>
