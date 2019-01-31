@@ -1,0 +1,30 @@
+.partners {
+
+  .partner-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: $gutter--xl 0;
+
+    @include screen($bp-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  .partner-member {
+    // flex-basis: 100%;
+    // margin-bottom: $gutter--small;
+  }
+
+  img {
+    padding: $gutter--small;
+    float: left;
+    flex-basis: 20%;
+    border-radius: 100%;
+  }
+
+  p {
+    margin-top: $gutter--large;
+  }
+
+}
