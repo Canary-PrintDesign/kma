@@ -12,7 +12,7 @@ fax:
   display: 1 (250) 390-2982
 
 address:
-  street: 7190 Lantzville Road
+  street: 102-7184 Lantzville Road
   city: Lantzville
   state: BC
   zip: V0R 2H0
@@ -23,4 +23,4 @@ mail-address:
   state: BC
   zip: V0R 2H0
 
-map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.3642330699577!2d-124.07657908332402!3d49.25054187932773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488992f58da00df%3A0x8654d30b29b5617b!2s7190+Lantzville+Rd%2C+Lantzville%2C+BC+V0R+2H0!5e0!3m2!1sen!2sca!4v1521776908261"
+map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.3642330699577!2d-124.07657908332402!3d49.25054187932773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488992f58da00df%3A0x8654d30b29b5617b!2s7184+Lantzville+Rd%2C+Lantzville%2C+BC+V0R+2H0!5e0!3m2!1sen!2sca!4v1521776908261"

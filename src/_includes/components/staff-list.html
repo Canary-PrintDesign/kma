@@ -1,4 +1,5 @@
-<a href="/about/partners/"><h4 class="partner-link">Partner Bio's</h4></a>
+<!-- <a href="/about/partners/"><h4 class="partner-link">Doug's Bio</h4></a> -->
+<h4> </h4>
   <div class="staff-list">
     {% for staff in site.data.staff %}
       {% assign image = nil %}
@@ -44,6 +45,11 @@
           {% if staff.email %}
             <div class="staff-member__email">
               <a class="staff-member__email-link" href="mailto:{{staff.email}}">{{ staff.email }}</a>
+            </div>
+          {% endif %}
+          {% if staff.bio %}
+            <div class="staff-member__email">
+              <a class="staff-member__email-link" href="/{{staff.bio}}">{{ staff.name }} Bio</a>
             </div>
           {% endif %}
         </div>

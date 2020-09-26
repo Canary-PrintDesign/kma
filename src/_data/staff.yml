@@ -1,14 +1,9 @@
 - name: Douglas K. Parkhurst
   designation:
-    - FCPA, FCA, CPA (Illinois)
-  title: Partner
+    - FCPA, FCA
+  title: Owner
   email: dparkhurst@kmacpa.ca
-
-- name: Brent Rushton
-  designation:
-    - CPA, CGA
-  title: Partner
-  email: brushton@kmacpa.ca
+  bio: about/partners
 
 - name: Alison Gascoigne
   designation:
@@ -16,71 +11,11 @@
   title: Senior Manager
   email: agascoigne@kmacpa.ca
 
-- name: Kevin Rattray
-  designation:
-    - BBA, CPA, CA
-  title: Senior Accountant
-  email: krattray@kmacpa.ca
-
-- name: Penny Harper
-  designation:
-    -
-  title: Accounting Technician
-  email: pharper@kmacpa.ca
-
-- name: Adrienne Martin
-  designation:
-    -
-  title: Manager
-  email: amartin@kmacpa.ca
-
-- name: Belinda Hannah
-  designation:
-    -
-  title: Accounting Technician
-  email: bhannah@kmacpa.ca
-
 - name: Kelly Falconer
   designation:
     -
-  title: Reception
+  title: Administrative Assistant
   email: kfalconer@kmacpa.ca
-
-- name: Terry Moore
-  designation:
-    -
-  title: Administration
-  email: tmoore@kmacpa.ca
-
-- name: Chloe Jung
-  designation:
-    - BAcc, Candidate
-  title:
-  email: cjung@kmacpa.ca
-
-- name: Jason Puglak
-  designation:
-    - BBA
-  title: Accounting Technician
-  email: jpuglak@kmacpa.ca
-
-- name: Steven Hemmerling
-  designation:
-    - B.A. Accounting Major
-  title: Candidate
-  email: shemmerling@kmacpa.ca
-
-- name: Madeleine Zemek
-  designation:
-    -
-  title: Bookkeeper
-  email: mzemek@kmacpa.ca
-
-- name: Chessa Dykstra
-  designation:
-    -
-  title: Bookkeeper
-  email: cdyskstra@kmacpa.ca
 
 - name: Debbie Sterling
   designation:
@@ -88,8 +23,8 @@
   title: Office Manager
   email: dsterling@kmacpa.ca
 
-- name: Taylor Agnew
+- name: Lisa Munroe
   designation:
-    -
-  title: Receptionist
-  email: tagnew@kmacpa.ca
+    - CPA, CGA
+  title: Manager
+  email: lmunroe@kmacpa.ca
